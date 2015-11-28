@@ -13,7 +13,7 @@
 
 #main_frame {
     border:solid;
-    border-width:3px
+    border-width:3px;
 }
 
 #expression{
@@ -27,8 +27,14 @@
     font-size: 30px; 
     color:black;
     border-radius: 25px;
+    margin: 0px;
     /*border:2px solid red;*/
-    background-color:orange;"
+    background-color:yellow;"
+
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
 
 }
 
