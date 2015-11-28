@@ -46,13 +46,21 @@
     margin: 5px;
 }
 
-#element_circle{
-    border-radius: 25px;
-    margin: 0px;
-    /*border:2px solid red;*/
-    background-color:yellow;"
-    white-space: nowrap;
-    display: inline;
-    display: inline-block;
-    padding: 7px;
+#pronounciation_tr{
+    border-style:solid none solid; 
+    border-width:2px;
+}
+
+
+#element_name{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+}
+
+#element_content{
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

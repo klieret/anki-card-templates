@@ -1,4 +1,4 @@
-<table  id="main_frame" rules="rows" width=100% >
+<table  id="main_frame" rules="all" width=100% >
     
     <tr >
         <th colspan=2 style="text-align:center">
@@ -16,7 +16,7 @@
         </th>
     </tr>
 
-    <tr style="border-style:solid none none; border-width:2px;">
+    <tr id="pronounciation_tr">
         <th colspan=2>
             
             <div id="pronounciation">
@@ -30,23 +30,23 @@
     </th>
 
     {{#heisig_keywords}}
-    <tr style="border-style:solid none none; border-width:1px">
-        <td valign="top"><span id="element_circle">H</span></td>
-        <td>{{heisig_keywords}} </td>
+    <tr>
+        <td id="element_name">H</td>
+        <td id="element_content">{{heisig_keywords}} </td>
     </tr>
     {{/heisig_keywords}}
     
     {{#story}}
     <tr>
-        <td valign="top">S</td>
-        <td>{{story}}   </td>
+        <td id="element_name">S</td>
+        <td id="element_content">{{story}}   </td>
     </tr>
     {{/story}}
     
     {{#kanji_examples}}
     <tr>
-        <td valign="top">X</td>
-        <td>{{kanji_examples}}</td>
+        <td id="element_name">X</td>
+        <td id="element_content">{{kanji_examples}}</td>
     </tr>
     {{/kanji_examples}}
 </table>
