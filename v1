@@ -84,6 +84,12 @@ back
 			</div>
 			{{/note}}
 		</th>
+		{{#heisig_keywords}}
+		<tr>
+			<td valign="top">S</td>
+			<td>{{heisig_keywords}}	</td>
+		</tr>
+		{{/heisig_keywords}}
 		{{#story}}
 		<tr>
 			<td valign="top">S</td>
