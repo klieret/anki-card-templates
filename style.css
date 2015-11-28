@@ -42,5 +42,17 @@
     font-family: MSMincho; 
     font-size: 40px; 
     text-align: center; 
-    font-weight: normal;'
+    font-weight: normal;
+    margin: 5px;
+}
+
+#element_circle{
+    border-radius: 25px;
+    margin: 0px;
+    /*border:2px solid red;*/
+    background-color:yellow;"
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    padding: 7px;
 }
