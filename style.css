@@ -1,0 +1,11 @@
+.card {
+ font-family: "Aozora Mincho Medium";
+ font-size: 20px;
+ vertical-align:top;
+ text-align: left;
+ color: black;
+ background-color: white;
+}
+.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
