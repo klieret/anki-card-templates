@@ -1,19 +1,25 @@
 <table  id="main_frame" rules="all" width=100% >
+    
     <tr >
         <th colspan=2 style="text-align:center">
+            
             <div id="expression"> 
                 {{Expression}} 
             </div>
+            
             {{#number_of_readings}}
-                <div id="number_of_readings">
-                    &gt; {{number_of_readings}} readings &lt;
-                </div>
+            <span id="number_of_readings">
+                &nbsp;{{number_of_readings}}x&nbsp;
+            </span>
             {{/number_of_readings}}
+        
         </th>
     </tr>
+
     <tr>
         <th colspan=2>
-            <div style='font-family: MSMincho; font-size: 40px; text-align: center; font-weight: normal;'>
+            
+            <div id="pronounciation">
                 {{Pronounciation}}
             </div>
             {{#note}}
@@ -21,23 +27,27 @@
                 {{note}} <br>
             </div>
             {{/note}}
+
         </th>
+
         {{#heisig_keywords}}
         <tr>
             <td valign="top">S</td>
             <td>{{heisig_keywords}} </td>
         </tr>
         {{/heisig_keywords}}
+        
         {{#story}}
         <tr>
             <td valign="top">S</td>
             <td>{{story}}   </td>
         </tr>
         {{/story}}
+        
         {{#kanji_examples}}
         <tr>
             <td valign="top">X</td>
             <td>{{kanji_examples}}</td>
-    </tr>
-    {{/kanji_examples}}
+        </tr>
+        {{/kanji_examples}}
 </table>

@@ -25,9 +25,16 @@
 #number_of_readings{
     font-family: MSmincho; 
     font-size: 30px; 
-    color:red;
+    color:black;
+    border-radius: 25px;
+    /*border:2px solid red;*/
+    background-color:orange;"
+
 }
 
 #pronounciation{
-
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: center; 
+    font-weight: normal;'
 }

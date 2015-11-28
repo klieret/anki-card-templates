@@ -1,24 +1,19 @@
-<table  rules="all" style='border:solid; border-width:3px;' width=100% >
+<table  id="main_frame" rules="all" width=100% >
+    
     <tr >
-                <th colspan=2 style="">
-            <table border=0 align="center" style="margin: 0px auto; text-align:center">
-                <tr>
-                    <td>
-                        <span style='font-family: MSmincho; font-size: 60px; text-align: center; font-weight: normal'> 
-                            {{Expression}} 
-                        </span>
-                    </td>
-                </tr>
-                {{#number_of_readings}}
-                <tr>
-                    <td>
-                        <span style="font-family: MSmincho; font-size: 30px; color:red">
-                            &gt; {{number_of_readings}} readings &lt;
-                        </span>  
-                    </td>
-                </tr>
-                {{/number_of_readings}}
-            </table>
+        <th colspan=2 style="text-align:center">
+            
+            <div id="expression"> 
+                {{Expression}} 
+            </div>
+            
+            {{#number_of_readings}}
+            <span id="number_of_readings">
+                &nbsp;{{number_of_readings}}x&nbsp;
+            </span>
+            {{/number_of_readings}}
+        
         </th>
     </tr>
+
 </table>
