@@ -1,24 +1,14 @@
 <table  id="main_frame" rules="all" width=100% >
     <tr >
-        <th colspan=2 style="">
-            <table border=0 align="center" style="margin: 0px auto; text-align:center">
-                <tr>
-                    <td>
-                        <span id="expression"> 
-                            {{Expression}} 
-                        </span>
-                    </td>
-                </tr>
-                {{#number_of_readings}}
-                <tr>
-                    <td>
-                        <span style="font-family: MSmincho; font-size: 30px; color:red">
-                            &gt; {{number_of_readings}} readings &lt;
-                        </span>  
-                    </td>
-                </tr>
-                {{/number_of_readings}}
-            </table>
+        <th colspan=2 style="text-align:center">
+            <div id="expression"> 
+                {{Expression}} 
+            </div>
+            {{#number_of_readings}}
+                <div id="number_of_readings">
+                    &gt; {{number_of_readings}} readings &lt;
+                </div>
+            {{/number_of_readings}}
         </th>
     </tr>
     <tr>

@@ -19,10 +19,15 @@
 #expression{
     font-family: MSmincho;
     font-size: 60px;
-    text-align: center; 
     font-weight: normal
 }
 
+#number_of_readings{
+    font-family: MSmincho; 
+    font-size: 30px; 
+    color:red;
+}
+
 #pronounciation{
-    
+
 }
