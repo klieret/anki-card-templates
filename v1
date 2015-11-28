@@ -6,16 +6,27 @@ info zeug in Tabellenform
 front
 #################
 
-<table border="1" style='font-family: msmincho;font-size: 60px; text-align: left' width=100%>
-	<tr>
-		<th colspan=2 >
-			<table border=0 align="center" style="margin: 0px auto;">
-			<tr><td>
-			<span style='text-align: center; font-weight: normal'> 
-				{{Expression}} 
-			<div style="font-size: 30px; color:red">&gt; {{number_of_readings}} readings &lt;</div>	
-			</span>
-			</td></tr></table>
+<table  rules="all" style='font-family: "Aozora Mincho Medium";font-size: 20px; text-align:"left"; border:solid; border-width:3px;' width=100% >
+	<tr >
+				<th colspan=2 style="">
+			<table border=0 align="center" style="margin: 0px auto; text-align:center">
+				<tr>
+					<td>
+						<span style='font-family: MSmincho; font-size: 60px; text-align: center; font-weight: normal'> 
+							{{Expression}} 
+						</span>
+					</td>
+				</tr>
+				{{#number_of_readings}}
+				<tr>
+					<td>
+						<div style="font-family: MSmincho; font-size: 30px; color:red">
+							&gt; {{number_of_readings}} readings &lt;
+						</div>	
+					</td>
+				</tr>
+				{{/number_of_readings}}
+			</table>
 		</th>
 	</tr>
 </table>
@@ -39,40 +50,51 @@ styling
 back 
 #################
 
-<table border="1" text-align: left' width=100%>
-	<tr>
-		<th colspan=2 >
-			<table border=0 align="center" style="margin: 0px auto;">
-			<tr><td>
-			<span style='font-family: MSmincho; font-size: 60px; text-align: center; font-weight: normal'> 
-				{{Expression}} 
-			<div style="font-size: 30px; color:red">&gt; {{number_of_readings}} readings &lt;</div>	
-			</span>
-			</td></tr>
+<table  rules="all" style='font-family: "Aozora Mincho Medium";font-size: 20px; text-align:"left"; border:solid; border-width:3px;' width=100% >
+	<tr >
+				<th colspan=2 style="">
+			<table border=0 align="center" style="margin: 0px auto; text-align:center">
+				<tr>
+					<td>
+						<span style='font-family: MSmincho; font-size: 60px; text-align: center; font-weight: normal'> 
+							{{Expression}} 
+						</span>
+					</td>
+				</tr>
+				{{#number_of_readings}}
+				<tr>
+					<td>
+						<div style="font-family: MSmincho; font-size: 30px; color:red">
+							&gt; {{number_of_readings}} readings &lt;
+						</div>	
+					</td>
+				</tr>
+				{{/number_of_readings}}
 			</table>
 		</th>
 	</tr>
 	<tr>
-	<th colspan=2>
-		<div style='font-family: MSMincho; font-size: 40px; text-align: center; font-weight: normal;'>
-			{{Pronounciation}}
-		</div>
-		{{#note}}
-		<div style='font-size: 20px'; text-align: center'>
-			{{note}} <br>
-		</div>
-		{{/note}}
-	</th>
-	{{#story}}
-	<tr>
-		<td valign="top">Story:</td>
-		<td>{{story}}	</td>
-	</tr>
-	{{/story}}
-	{{#kanji_examples}}
-	<tr>
-		<td valign="top">E.g.:</td>
-		<td>{{kanji_examples}}</td>
+		<th colspan=2>
+			<div style='font-family: MSMincho; font-size: 40px; text-align: center; font-weight: normal;'>
+				{{Pronounciation}}
+			</div>
+			{{#note}}
+			<div style='font-size: 20px'>
+				{{note}} <br>
+			</div>
+			{{/note}}
+		</th>
+		{{#story}}
+		<tr>
+			<td valign="top">S</td>
+			<td>{{story}}	</td>
+		</tr>
+		{{/story}}
+		{{#kanji_examples}}
+		<tr>
+			<td valign="top">X</td>
+			<td>{{kanji_examples}}</td>
 	</tr>
 	{{/kanji_examples}}
 </table>
+
