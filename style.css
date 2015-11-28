@@ -7,5 +7,77 @@
  background-color: white;
 }
 .linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+.mobile { font-family: "myfont"; }
 @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
 @font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
+
+#main_frame {
+    border:solid;
+    border-width:3px;
+}
+
+#reading{
+    font-family: MSmincho;
+    font-size: 60px;
+    font-weight: normal
+}
+
+#meaning{
+    text-align:left;
+    font-size: 20px;
+    font-weight: normal
+}
+
+#hint{
+    font-family: MSmincho; 
+    font-size: 30px; 
+    color:black;
+    border-radius: 25px;
+    margin: 0px;
+    /*border:2px solid red;*/
+    background-color:yellow;"
+
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#reading{
+    font-family: MSMincho; 
+    font-size: 60px; 
+    text-align: center; 
+    font-weight: normal;
+    margin: 5px;
+}
+
+#alternate{
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: center; 
+    font-weight: normal;
+}
+
+
+#reading_tr{
+    border-style:solid none solid; 
+    border-width:2px;
+}
+
+
+#element_name{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+}
+
+#element_content{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#examples_correction{
+    margin-top:-24px;
+}

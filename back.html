@@ -1,66 +1,67 @@
-<table border="1" style='font-size: 20px; text-align: left' width=100%>
-    <tr>
-        <th colspan=2 >
-            <table border=0 align="center" style="margin: 0px auto;">
-            <tr><td>
-            <span style='text-align: left; font-weight: normal'> 
-                {{Meaning}}
-                {{#hint}}<div style="color:red;">({{hint}})</div>{{/hint}}  
-            </span>
-            </td></tr></table>
+<table  id="main_frame" rules="all" width=100% >
+    
+    <tr >
+        <th colspan=2 style="text-align:center">
+            
+            <div id="meaning"> 
+                {{Meaning}} 
+            </div>
+            
+            {{#hint}}
+            <div id="hint">
+                &nbsp;{{hint}}&nbsp;
+            </div>
+            {{/hint}}
+        
         </th>
     </tr>
-    <tr>
-        <th colspan=2 style="padding-top: 0.5cm; padding-bottom:0.5cm">
-            <div style='font-family: MSMincho; font-size: 60px; text-align: center; font-weight: normal;'>
+
+    <tr id="reading_tr">
+        <th colspan=2>
+            
+            <div id="reading">
                 {{Audio}}{{furigana:Reading}}
             </div>
-            {{#alternate}}
-            <div style='font-family: MSMincho; font-size: 40px; text-align: center; font-weight: normal'>
-                {{alternate}}
-            </div>
-            {{/alternate}}
             {{#note}}
-            <div style='font-size: 20px; text-align: center; font-weight: normal'>
+            <div style='font-size: 20px'>
                 {{note}} <br>
             </div>
             {{/note}}
-        </th>
+    </th>
+
     {{#heisig_keywords}}
     <tr>
-        <td valign="top">H</td>
-        <td>{{heisig_keywords}} </td>
+        <td id="element_name">H</td>
+        <td id="element_content">{{heisig_keywords}} </td>
     </tr>
     {{/heisig_keywords}}
+    
     {{#kanji_story}}
     <tr>
-        <td valign="top">K</td>
-        <td>{{kanji_story}}</td>
+        <td id="element_name">K</td>
+        <td id="element_content">{{kanji_story}}   </td>
     </tr>
     {{/kanji_story}}
+    
     {{#kana_story}}
     <tr>
-        <td valign="top">R</td>
-        <td>{{kana_story}}</td>
+        <td id="element_name">R</td>
+        <td id="element_content">{{kana_story}}   </td>
     </tr>
     {{/kana_story}}
+
     {{#readings_story}}
     <tr>
-        <td valign="top">O</td>
-        <td>{{readings_story}}</td>
+        <td id="element_name">O</td>
+        <td id="element_content">{{readings_story}}</td>
     </tr>
     {{/readings_story}}
-    {{#picture}}
-    <tr>
-        <td valign="top">I</td>
-        <td align="center">{{picture}}</td>
-    </tr>
-    {{/picture}}
+
     {{#Examples}}
     <tr>
-    <th colspan=2>
-        <div style='font-weight:normal'>{{Examples}}</div>
-    </th>
+        <td id="element_name">X</td>
+        <td id="element_content"><div id="examples_correction">{{Examples}}</div></td>
     </tr>
     {{/Examples}}
+
 </table>

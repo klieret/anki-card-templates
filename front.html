@@ -1,12 +1,19 @@
-<table border="1" style='font-size: 20px; text-align: left' width=100%>
-    <tr>
-        <th colspan=2 >
-            <table border=0 align="center" style="margin: 0px auto;">
-            <tr><td>
-            <span style='text-align: left; font-weight: normal'> 
-                {{Meaning}} {{#hint}}<div style="color:red;">({{hint}})</div>{{/hint}} 
-            </span>
-            </td></tr></table>
+<table  id="main_frame" rules="all" width=100% >
+    
+    <tr >
+        <th colspan=2 style="text-align:center">
+            
+            <div id="meaning"> 
+                {{Meaning}} 
+            </div>
+            
+            {{#hint}}
+            <div id="hint">
+                &nbsp;{{hint}}&nbsp;
+            </div>
+            {{/hint}}
+        
         </th>
     </tr>
+
 </table>
