@@ -37,7 +37,7 @@
 
 }
 
-#pronounciation{
+#reading{
     font-family: MSMincho; 
     font-size: 40px; 
     text-align: center; 
@@ -45,7 +45,7 @@
     margin: 5px;
 }
 
-#pronounciation_tr{
+#reading_tr{
     border-style:solid none solid; 
     border-width:2px;
 }
