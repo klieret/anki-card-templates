@@ -1,0 +1,67 @@
+<table  id="main_frame" rules="all" width=100% >
+    
+    <tr >
+        <th colspan=2 style="text-align:center">
+            
+            <div id="meaning"> 
+                {{Meaning}} 
+            </div>
+            
+            {{#hint}}
+            <div id="hint_backward">
+                &nbsp;{{hint_backward}}&nbsp;
+            </div>
+            {{/hint}}
+        
+        </th>
+    </tr>
+
+    <tr id="reading_tr">
+        <th colspan=2>
+            
+            <div id="reading">
+                {{Audio}}{{furigana:Reading}}
+            </div>
+            {{#note}}
+            <div style='font-size: 20px'>
+                {{note}} <br>
+            </div>
+            {{/note}}
+    </th>
+
+    {{#heisig_keywords}}
+    <tr>
+        <td id="element_name">H</td>
+        <td id="element_content">{{heisig_keywords}} </td>
+    </tr>
+    {{/heisig_keywords}}
+    
+    {{#kanji_story}}
+    <tr>
+        <td id="element_name">K</td>
+        <td id="element_content">{{kanji_story}}   </td>
+    </tr>
+    {{/kanji_story}}
+    
+    {{#kana_story}}
+    <tr>
+        <td id="element_name">R</td>
+        <td id="element_content">{{kana_story}}   </td>
+    </tr>
+    {{/kana_story}}
+
+    {{#readings_story}}
+    <tr>
+        <td id="element_name">O</td>
+        <td id="element_content">{{readings_story}}</td>
+    </tr>
+    {{/readings_story}}
+
+    {{#Examples}}
+    <tr>
+        <td id="element_name">X</td>
+        <td id="element_content"><div id="examples_correction">{{Examples}}</div></td>
+    </tr>
+    {{/Examples}}
+
+</table>
