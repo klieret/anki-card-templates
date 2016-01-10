@@ -1,21 +1,5 @@
 <table  id="main_frame" rules="all" width=100% >
     
-    <tr >
-        <th colspan=2 style="text-align:center">
-            
-            <div id="meaning"> 
-                {{Meaning}} 
-            </div>
-            
-            {{#hint}}
-            <div id="hint_backward">
-                &nbsp;{{hint_backward}}&nbsp;
-            </div>
-            {{/hint}}
-        
-        </th>
-    </tr>
-
     <tr id="reading_tr">
         <th colspan=2>
             
@@ -28,6 +12,18 @@
             </div>
             {{/note}}
     </th>
+
+    <tr >
+        <th colspan=2 style="text-align:center">
+            
+            <div id="meaning_reverse"> 
+                {{Meaning}} 
+            </div>
+        
+        </th>
+    </tr>
+
+    
 
     {{#heisig_keywords}}
     <tr>

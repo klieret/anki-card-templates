@@ -28,6 +28,13 @@
     font-weight: normal
 }
 
+#meaning_reverse{
+    text-align:left;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 20px 20px 20px 20px;
+}
+
 #hint{
     font-family: MSmincho; 
     font-size: 30px; 
