@@ -42,6 +42,20 @@
     margin-bottom: 10px;
 }
 
+#hint_backward{
+    font-family: MSmincho; 
+    font-size: 30px; 
+    color:black;
+    border-radius: 25px;
+    margin: 0px;
+    border:2px solid yellow
+    /*background-color:yellow;*/
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
 #reading{
     font-family: MSMincho; 
     font-size: 60px; 
