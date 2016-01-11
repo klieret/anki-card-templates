@@ -29,12 +29,39 @@
     border-radius: 25px;
     margin: 0px;
     /*border:2px solid red;*/
+    background-color:tomato;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#kun{
+    font-family: MSmincho; 
+    font-size: 20px; 
+    color:black;
+    border-radius: 25px;
+    margin: 0px;
+    /*border:2px solid red;*/
+    background-color:orange;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#on{
+    font-family: MSmincho; 
+    font-size: 20px; 
+    color:black;
+    border-radius: 25px;
+    margin: 0px;
+    /*border:2px solid red;*/
     background-color:yellow;
     white-space: nowrap;
     display: inline;
     display: inline-block;
     margin-bottom: 10px;
-
 }
 
 #reading{
