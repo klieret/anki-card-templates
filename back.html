@@ -13,17 +13,17 @@
             </div>
             {{/number_of_readings}}
 
-            {{#Reading_kun}}
+            {{#kunyomi}}
             <div id="kun">
                 &nbsp;K&nbsp;
             </div>
-            {{/Reading_kun}}
+            {{/kunyomi}}
 
-            {{#Reading}}
+            {{#onyomi}}
             <div id="on">
                 &nbsp;O&nbsp;
             </div>
-            {{/Reading}}
+            {{/onyomi}}
         
         </th>
     </tr>
@@ -31,17 +31,17 @@
     <tr id="reading_tr">
         <th colspan=2>
             
-            {{#Reading_kun}}
+            {{#kunyomi}}
             <div id="reading">
-                {{Reading_kun}}
+                {{kunyomi}}
             </div>
-            {{/Reading_kun}}
+            {{/kunyomi}}
             
-            {{#Reading}}
+            {{#onyomi}}
             <div id="reading">
-                {{Reading}}
+                {{onyomi}}
             </div>
-            {{/Reading}}
+            {{/onyomi}}
 
             {{#note}}
             <div style='font-size: 20px'>
@@ -57,12 +57,19 @@
     </tr>
     {{/heisig_keywords}}
     
-    {{#story}}
+    {{#onyomi_story}}
     <tr>
-        <td id="element_name">S</td>
-        <td id="element_content">{{story}}   </td>
+        <td id="element_name">O</td>
+        <td id="element_content">{{onyomi_story}}   </td>
     </tr>
-    {{/story}}
+    {{/onyomi_story}}
+
+    {{#kunyomi_story}}
+    <tr>
+        <td id="element_name">K</td>
+        <td id="element_content">{{kunyomi_story}}   </td>
+    </tr>
+    {{/kunyomi_story}}
     
     {{#kanji_examples}}
     <tr>
