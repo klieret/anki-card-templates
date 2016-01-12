@@ -1,20 +1,28 @@
 <table  id="main_frame" rules="all" width=100% >
     
     <tr id="reading_tr">
-        <th colspan=2>
+        <th colspan=2 style="text-align:center">
             
             <div id="reading">
                 {{Audio}}{{furigana:Reading}}
             </div>
+
+            {{#hint_backward}}
+            <div id="hint_backward">
+                &nbsp;{{hint_backward}}&nbsp;
+            </div>
+            {{/hint_backward}}
+
             {{#note}}
             <div style='font-size: 20px'>
                 {{note}} <br>
             </div>
             {{/note}}
+
     </th>
 
     <tr >
-        <th colspan=2 style="text-align:center">
+        <th colspan=2>
             
             <div id="meaning_reverse"> 
                 {{Meaning}} 

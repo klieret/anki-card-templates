@@ -61,6 +61,7 @@
     display: inline;
     display: inline-block;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #reading{
@@ -82,6 +83,7 @@
 #reading_tr{
     border-style:solid none solid; 
     border-width:2px;
+    text-align: center;
 }
 
 
