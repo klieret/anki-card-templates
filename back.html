@@ -1,28 +1,26 @@
 <table  id="main_frame" rules="all" width=100% >
 
-    <!-- Part that is identical to the front -->
-
     <tr>
         <th colspan=2 style="text-align:center">
             
             <div id="expression"> 
                 {{Expression}}
             </div>
-            
+
             {{#number_of_readings}}
-            <div id="number_of_readings">
+            <div id="badge number_of_readings">
                 &nbsp;{{number_of_readings}}x&nbsp;
             </div>
             {{/number_of_readings}}
 
             {{#kunyomi}}
-            <div id="kun">
+            <div class="badge kun">
                 &nbsp;K&nbsp;
             </div>
             {{/kunyomi}}
 
             {{#onyomi}}
-            <div id="on">
+            <div class="badge on">
                 &nbsp;O&nbsp;
             </div>
             {{/onyomi}}
@@ -30,66 +28,69 @@
         </th>
     </tr>
 
-    <!-- The answer -->
+    <span id="answer">
+        <tr id="reading_tr">
+            <th colspan=2>
+                
+                {{#kunyomi}}
+                <div class="reading" id="kun">
+                    {{kunyomi}}
+                </div>
+                {{/kunyomi}}
+                
+                {{#onyomi}}
+                <div class="reading" id="on">
+                    {{onyomi}}
+                </div>
+                {{/onyomi}}
 
-    <tr id="reading_tr">
-        <th colspan=2>
-            
-            {{#kunyomi}}
-            <div id="reading">
-                {{kunyomi}}
-            </div>
-            {{/kunyomi}}
-            
-            {{#onyomi}}
-            <div id="reading">
-                {{onyomi}}
-            </div>
-            {{/onyomi}}
+                {{#note}}
+                <div id="note">
+                    {{note}}
+                </div>
+                {{/note}}
 
-            {{#note}}
-            <div style='font-size: 20px'>
-                {{note}} <br>
-            </div>
-            {{/note}}
-        </th>
-    </tr>
+            </th>
+        </tr>
+    </span>
 
-    <!-- Addtional fields -->
+    <span id="data_fields">
 
-    {{#heisig_keywords}}
-    <tr>
-        <td>H</td>
-        <td>{{heisig_keywords}}</td>
-    </tr>
-    {{/heisig_keywords}}
+        {{#heisig_keywords}}
+        <tr>
+            <td>H</td>
+            <td>{{heisig_keywords}}</td>
+        </tr>
+        {{/heisig_keywords}}
 
-    {{#combined_story}}
-    <tr>
-        <td>C</td>
-        <td>{{combined_story}}</td>
-    </tr>
-    {{/combined_story}}
-    
-    {{#onyomi_story}}
-    <tr>
-        <td>O</td>
-        <td>{{onyomi_story}}</td>
-    </tr>
-    {{/onyomi_story}}
+        {{#combined_story}}
+        <tr>
+            <td>C</td>
+            <td>{{combined_story}}</td>
+        </tr>
+        {{/combined_story}}
+        
+        {{#onyomi_story}}
+        <tr>
+            <td>O</td>
+            <td>{{onyomi_story}}</td>
+        </tr>
+        {{/onyomi_story}}
 
-    {{#kunyomi_story}}
-    <tr>
-        <td>K</td>
-        <td>{{kunyomi_story}}</td>
-    </tr>
-    {{/kunyomi_story}}
-    
-    {{#kanji_examples}}
-    <tr>
-        <td>X</td>
-        <td>{{kanji_examples}}</td>
-    </tr>
-    {{/kanji_examples}}
+        {{#kunyomi_story}}
+        <tr>
+            <td>K</td>
+            <td>{{kunyomi_story}}</td>
+        </tr>
+        {{/kunyomi_story}}
+        
+        {{#kanji_examples}}
+        <tr>
+            <td>X</td>
+            <td>{{kanji_examples}}</td>
+        </tr>
+        {{/kanji_examples}}
+
+    </span>
 
 </table>

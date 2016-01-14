@@ -23,54 +23,47 @@
     font-weight: normal
 }
 
-#number_of_readings{
+ /*--------------------------------- BADGES ---------------------------------*/
+
+.badge{
     font-family: MSmincho; 
-    font-size: 30px; 
+    font-size: 20px; 
     color:black;
     border-radius: 25px;
     margin: 0px;
-    /*border:2px solid red;*/
-    background-color:tomato;
     white-space: nowrap;
     display: inline;
     display: inline-block;
     margin-bottom: 10px;
 }
 
-#kun{
-    font-family: MSmincho; 
-    font-size: 20px; 
-    color:black;
-    border-radius: 25px;
-    margin: 0px;
-    /*border:2px solid red;*/
+.badge.kun{
     background-color:orange;
-    white-space: nowrap;
-    display: inline;
-    display: inline-block;
-    margin-bottom: 10px;
 }
 
-#on{
-    font-family: MSmincho; 
-    font-size: 20px; 
-    color:black;
-    border-radius: 25px;
-    margin: 0px;
-    /*border:2px solid red;*/
+.badge.on{
     background-color:yellow;
-    white-space: nowrap;
-    display: inline;
-    display: inline-block;
-    margin-bottom: 10px;
 }
 
-#reading{
+#number_of_readings.badge{
+    background-color:tomato;
+}
+
+/* ----------------------------- Answer fields ----------------------------- */
+
+.reading{
     font-family: MSMincho; 
     font-size: 40px; 
     text-align: center; 
     font-weight: normal;
     margin: 5px;
+}
+
+.reading.kun{}
+.reading.on{}
+
+.#note{
+    font-size: 20px
 }
 
 #reading_tr{
@@ -79,7 +72,14 @@
 }
 
 
-td {
+/*------------------------------- Data fields -------------------------------*/
+
+/* 
+   Format first/all other columns separetely:
+   see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
+*/
+
+.data_fields td {
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 5px;
@@ -87,7 +87,7 @@ td {
     vertical-align: top;
 }
 
-td + td {
+.data_fields td + td {
     padding-top: 5px;
     padding-bottom: 5px;
 }
