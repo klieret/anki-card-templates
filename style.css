@@ -1,97 +1,99 @@
-    .card {
-        font-family: Arial; 
-        font-size: 20px;
-        vertical-align: top;
-        text-align: left;
-        color: black;
-        background-color: white;
-    }
+.card {
+    font-family: Arial; 
+    font-size: 20px;
+    vertical-align: top;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
 
-    .linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
-    .mobile { font-family: "myfont"; }
-    @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
-    @font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
+.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+.mobile { font-family: "myfont"; }
+@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
 
-    #main_frame {
-        border: solid;
-        border-width: 3px;
-    }
+#main_frame {
+    border: solid;
+    border-width: 3px;
+}
 
-    #expression{
-        font-family: MSmincho;
-        font-size: 60px;
-        font-weight: normal;
-    }
+#expression{
+    font-family: MSmincho;
+    font-size: 60px;
+    font-weight: normal;
+}
 
-    #question{
-        text-align:center;
-    }
+#question{
+    text-align:center;
+}
 
-     /*--------------------------------- BADGES ---------------------------------*/
+ /*--------------------------------- BADGES ---------------------------------*/
 
-    .badge{
-        font-family: MSmincho; 
-        font-size: 20px; 
-        color:black;
-        border-radius: 25px;
-        margin: 0px;
-        white-space: nowrap;
-        display: inline;
-        display: inline-block;
-        margin-bottom: 10px;
-    }
+.badge{
+    font-family: MSmincho; 
+    font-size: 20px; 
+    color:black;
+    border-radius: 25px;
+    margin: 0px;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
-    .badge.kun{
-        background-color:orange;
-    }
+.badge.kun{
+    background-color:orange;
+}
 
-    .badge.on{
-        background-color:yellow;
-    }
+.badge.on{
+    background-color:yellow;
+}
 
-    #number_of_readings.badge{
-        background-color:tomato;
-    }
+#number_of_readings.badge{
+    background-color:tomato;
+}
 
-    /* ----------------------------- Answer fields ----------------------------- */
+/* ----------------------------- Answer fields ----------------------------- */
 
-    .reading{
-        font-family: MSMincho; 
-        font-size: 40px; 
-        text-align: center; 
-        font-weight: normal;
-        margin: 5px;
-    }
+.reading{
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: center; 
+    font-weight: normal;
+    margin: 5px;
+}
 
-    .reading.kun{}
-    .reading.on{}
+.reading.kun{}
+.reading.on{}
 
-    #note{
-        font-size: 20px
-    }
+#note{
+    font-size: 20px
+}
 
-    #answer{
-        border-style:solid none solid; 
-        border-width:2px;
-    }
+#answer{
+    border-style:solid none solid; 
+    border-width:2px;
+}
 
 
-    /*------------------------------- Data fields -------------------------------*/
+/*------------------------------- Data fields -------------------------------*/
 
-    /* 
-       Format first/all other columns separetely:
-       see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
-    */
+/* 
+   Format first/all other columns separetely:
+   see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
+*/
 
-    td {
-        padding-left: 2px;
-        padding-right: 2px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        vertical-align: top;
-    }
+td{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+}
 
-    td + td {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
+td + td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
