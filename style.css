@@ -97,3 +97,16 @@ td + td {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.technical{
+    font-family: Courier; 
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
+
+#tags{
+    border-style:solid none none; 
+    border-width:2px;
+}
