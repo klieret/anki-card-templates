@@ -1,7 +1,7 @@
 <table  id="main_frame" rules="all" width=100% >
 
-    <tr>
-        <th colspan=2 style="text-align:center">
+    <tr id="question">
+        <th colspan=2>
             
             <div id="expression"> 
                 {{Expression}}
@@ -28,31 +28,29 @@
         </th>
     </tr>
 
-    <span id="answer">
-        <tr id="reading_tr">
-            <th colspan=2>
-                
-                {{#kunyomi}}
-                <div class="reading" id="kun">
-                    {{kunyomi}}
-                </div>
-                {{/kunyomi}}
-                
-                {{#onyomi}}
-                <div class="reading" id="on">
-                    {{onyomi}}
-                </div>
-                {{/onyomi}}
+    <tr id="answer">
+        <th colspan=2>
+            
+            {{#kunyomi}}
+            <div class="reading kun">
+                {{kunyomi}}
+            </div>
+            {{/kunyomi}}
+            
+            {{#onyomi}}
+            <div class="reading on">
+                {{onyomi}}
+            </div>
+            {{/onyomi}}
 
-                {{#note}}
-                <div id="note">
-                    {{note}}
-                </div>
-                {{/note}}
+            {{#note}}
+            <div id="note">
+                {{note}}
+            </div>
+            {{/note}}
 
-            </th>
-        </tr>
-    </span>
+        </th>
+    </tr>
 
     <span id="data_fields">
 

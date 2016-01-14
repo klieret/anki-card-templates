@@ -1,93 +1,97 @@
-.card {
-    font-family: "Aozora Mincho Medium";
-    font-size: 20px;
-    vertical-align:top;
-    text-align: left;
-    color: black;
-    background-color: white;
-}
+    .card {
+        font-family: Arial; 
+        font-size: 20px;
+        vertical-align: top;
+        text-align: left;
+        color: black;
+        background-color: white;
+    }
 
-.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
-.mobile { font-family: "myfont"; }
-@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
-@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
+    .linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+    .mobile { font-family: "myfont"; }
+    @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+    @font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
 
-#main_frame {
-    border: solid;
-    border-width: 3px;
-}
+    #main_frame {
+        border: solid;
+        border-width: 3px;
+    }
 
-#expression{
-    font-family: MSmincho;
-    font-size: 60px;
-    font-weight: normal
-}
+    #expression{
+        font-family: MSmincho;
+        font-size: 60px;
+        font-weight: normal;
+    }
 
- /*--------------------------------- BADGES ---------------------------------*/
+    #question{
+        text-align:center;
+    }
 
-.badge{
-    font-family: MSmincho; 
-    font-size: 20px; 
-    color:black;
-    border-radius: 25px;
-    margin: 0px;
-    white-space: nowrap;
-    display: inline;
-    display: inline-block;
-    margin-bottom: 10px;
-}
+     /*--------------------------------- BADGES ---------------------------------*/
 
-.badge.kun{
-    background-color:orange;
-}
+    .badge{
+        font-family: MSmincho; 
+        font-size: 20px; 
+        color:black;
+        border-radius: 25px;
+        margin: 0px;
+        white-space: nowrap;
+        display: inline;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
 
-.badge.on{
-    background-color:yellow;
-}
+    .badge.kun{
+        background-color:orange;
+    }
 
-#number_of_readings.badge{
-    background-color:tomato;
-}
+    .badge.on{
+        background-color:yellow;
+    }
 
-/* ----------------------------- Answer fields ----------------------------- */
+    #number_of_readings.badge{
+        background-color:tomato;
+    }
 
-.reading{
-    font-family: MSMincho; 
-    font-size: 40px; 
-    text-align: center; 
-    font-weight: normal;
-    margin: 5px;
-}
+    /* ----------------------------- Answer fields ----------------------------- */
 
-.reading.kun{}
-.reading.on{}
+    .reading{
+        font-family: MSMincho; 
+        font-size: 40px; 
+        text-align: center; 
+        font-weight: normal;
+        margin: 5px;
+    }
 
-.#note{
-    font-size: 20px
-}
+    .reading.kun{}
+    .reading.on{}
 
-#reading_tr{
-    border-style:solid none solid; 
-    border-width:2px;
-}
+    #note{
+        font-size: 20px
+    }
+
+    #answer{
+        border-style:solid none solid; 
+        border-width:2px;
+    }
 
 
-/*------------------------------- Data fields -------------------------------*/
+    /*------------------------------- Data fields -------------------------------*/
 
-/* 
-   Format first/all other columns separetely:
-   see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
-*/
+    /* 
+       Format first/all other columns separetely:
+       see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
+    */
 
-.data_fields td {
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    vertical-align: top;
-}
+    td {
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: top;
+    }
 
-.data_fields td + td {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+    td + td {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
