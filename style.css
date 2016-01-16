@@ -15,6 +15,12 @@
 #main_frame {
     border: solid;
     border-width: 3px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#main_frame td, #main_frame tr{
+    border: 1px solid black;
 }
 
 #expression{
