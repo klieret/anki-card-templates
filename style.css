@@ -24,7 +24,7 @@
 }
 
 #question{
-    text-align:center;
+    text-align: center;
 }
 
  /*--------------------------------- BADGES ---------------------------------*/
@@ -32,7 +32,7 @@
 .badge{
     font-family: MSmincho; 
     font-size: 20px; 
-    color:black;
+    color: black;
     border-radius: 25px;
     margin: 0px;
     white-space: nowrap;
@@ -44,15 +44,15 @@
 }
 
 .badge.kun{
-    background-color:orange;
+    background-color: orange;
 }
 
 .badge.on{
-    background-color:yellow;
+    background-color: yellow;
 }
 
-#number_of_readings.badge{
-    background-color:tomato;
+.badge.number_of_readings{
+    background-color: tomato;
 }
 
 /* ----------------------------- Answer fields ----------------------------- */
@@ -73,8 +73,8 @@
 }
 
 #answer{
-    border-style:solid none solid; 
-    border-width:2px;
+    border-style: solid none solid; 
+    border-width: 2px;
 }
 
 
@@ -109,6 +109,7 @@ td + td {
 }
 
 #tags{
-    border-style:solid none none; 
-    border-width:2px;
+    /*make border between technical fields and normal data fields thick*/
+    border-style: solid none none; 
+    border-width: 2px;
 }
