@@ -78,9 +78,10 @@
     font-size: 20px
 }
 
-#answer{
+#answer th{
     border-style: solid none solid; 
-    border-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
 }
 
 
@@ -110,12 +111,9 @@ td + td {
 .technical{
     font-family: Courier; 
     font-size: 15px;
-    color: black;
-    background-color: white;
 }
 
-#tags{
+#first_technical td{
     /*make border between technical fields and normal data fields thick*/
-    border-style: solid none none; 
-    border-width: 2px;
+    border-top-width: 2px;
 }

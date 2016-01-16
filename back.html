@@ -89,28 +89,29 @@
         </tr>
         {{/kanji_examples}}
 
-        <tr  id="tags">
-            <td class="technical">T</td>
-            <td class="technical">
-                {{#Tags}}
-                {{Tags}}
-                {{/Tags}}
-                {{^Tags}}
-                None
-                {{/Tags}}
-            </td>
-        </tr>
-
-        <tr>
-            <td class="technical">Y</td>
-            <td class="technical">{{Type}}</td>
-        </tr>
-
-        <tr>
-            <td class="technical">D</td>
-            <td class="technical">{{Deck}}</td>
-        </tr>
-
+        
     </span>
+
+    <tr class="technical" id="first_technical">
+        <td>T</td>
+        <td>
+            {{#Tags}}
+            {{Tags}}
+            {{/Tags}}
+            {{^Tags}}
+            None
+            {{/Tags}}
+        </td>
+    </tr>
+
+    <tr class="technical">
+        <td>Y</td>
+        <td>{{Type}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>D</td>
+        <td>{{Deck}}</td>
+    </tr>
 
 </table>
