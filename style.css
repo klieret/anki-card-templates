@@ -63,6 +63,15 @@
 
 /* ----------------------------- Answer fields ----------------------------- */
 
+#reading_table{
+    .border: none;
+    width: 100%;
+}
+
+#reading_table td, #reading_table tr{
+    border: none;
+}
+
 .reading{
     font-family: MSMincho; 
     font-size: 40px; 

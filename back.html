@@ -31,23 +31,34 @@
     <tr id="answer">
         <th colspan=2>
             
-            {{#kunyomi}}
-            <div class="reading kun">
-                {{kunyomi}}
-            </div>
-            {{/kunyomi}}
-            
-            {{#onyomi}}
-            <div class="reading on">
-                {{onyomi}}
-            </div>
-            {{/onyomi}}
-
             {{#note}}
             <div id="note">
                 {{note}}
             </div>
             {{/note}}
+
+            <table id="reading_table">
+                <tr>
+
+                {{#kunyomi}}
+                <td>
+                <div class="reading kun">
+                    {{kunyomi}}
+                </div>
+                <td>
+                {{/kunyomi}}
+                
+                {{#onyomi}}
+                <td>
+                <div class="reading on">
+                    {{onyomi}}
+                </div>
+                </td>
+                {{/onyomi}}
+
+                </tr>
+            </table>
+
 
         </th>
     </tr>
