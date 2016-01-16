@@ -69,7 +69,8 @@
 }
 
 #reading_table td, #reading_table tr{
-    border: none;
+    border: solid;
+    width: 50%;
 }
 
 .reading{
