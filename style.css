@@ -1,129 +1,145 @@
-.card {
-    font-family: Arial; 
-    font-size: 20px;
-    vertical-align: top;
-    text-align: left;
-    color: black;
-    background-color: white;
-}
+    .card {
+        font-family: Arial; 
+        font-size: 20px;
+        vertical-align: top;
+        text-align: left;
+        color: black;
+        background-color: white;
+    }
 
-.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
-.mobile { font-family: "myfont"; }
-@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
-@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
+    .linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+    .mobile { font-family: "myfont"; }
+    @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+    @font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
 
-#main_frame {
-    border: solid;
-    border-width: 3px;
-    border-collapse: collapse;
-    width: 100%;
-}
+    #main_frame {
+        border: solid;
+        border-width: 3px;
+        border-collapse: collapse;
+        width: 100%;
+    }
 
-#main_frame td, #main_frame tr{
-    border: 1px solid black;
-}
+    #main_frame td, #main_frame tr{
+        border: 1px solid black;
+    }
 
-#expression{
-    font-family: MSmincho;
-    font-size: 60px;
-    font-weight: normal;
-}
+    #expression{
+        font-family: MSmincho;
+        font-size: 60px;
+        font-weight: normal;
+    }
 
-#question{
-    text-align: center;
-}
+    #question{
+        text-align: center;
+    }
 
- /*--------------------------------- BADGES ---------------------------------*/
+     /*--------------------------------- BADGES ---------------------------------*/
 
-.badge{
-    font-family: MSmincho; 
-    font-size: 20px; 
-    color: black;
-    border-radius: 25px;
-    margin: 0px;
-    white-space: nowrap;
-    display: inline;
-    display: inline-block;
-    margin-bottom: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
-}
+    .badge{
+        font-family: MSmincho; 
+        font-size: 20px; 
+        color: black;
+        border-radius: 25px;
+        margin: 0px;
+        white-space: nowrap;
+        display: inline;
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 
-.badge.kun{
-    background-color: orange;
-}
+    .badge.kun{
+        background-color: orange;
+    }
 
-.badge.on{
-    background-color: yellow;
-}
+    .badge.on{
+        background-color: yellow;
+    }
 
-.badge.number_of_readings{
-    background-color: tomato;
-}
+    .badge.number_of_readings{
+        background-color: tomato;
+    }
 
-/* ----------------------------- Answer fields ----------------------------- */
+    /* ----------------------------- Answer fields ----------------------------- */
 
-#reading_table{
-    .border: none;
-    width: 100%;
-}
+    #reading_table{
+        border: none;
+        width: 100%;
+    }
 
-#reading_table td, #reading_table tr{
-    border: solid;
-    width: 50%;
-}
+    #reading_table td{
+        border: none;
+        width:50%;
+        text-align: center;
+    }
 
-.reading{
-    font-family: MSMincho; 
-    font-size: 40px; 
-    text-align: center; 
-    font-weight: normal;
-    margin: 5px;
-}
+    #reading_table td:first-child{
+        border-right: solid;
+        border-right-width: 1px;
+        text-align: right;
+    }
 
-.reading.kun{}
-.reading.on{}
+    #reading_table td:last-child{
+        text-align: left;
+    }
 
-#note{
-    font-size: 20px
-}
+    .reading{
+        font-family: MSMincho; 
+        font-size: 40px; 
+        text-align: left; 
+        font-weight: normal;
+        margin: 5px;
+        display: inline-block;
+    }
 
-#answer th{
-    border-style: solid none solid; 
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-}
+    .reading.kun{}
+    .reading.on{}
+
+    #note{
+        font-size: 20px
+    }
+
+    #answer{
+    }
+
+    #answer th{
+        border-style: solid none solid; 
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+        text-align: center;
+    }
 
 
-/*------------------------------- Data fields -------------------------------*/
+    /*------------------------------- Data fields -------------------------------*/
 
-/* 
-   Format first/all other columns separetely:
-   see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
-*/
+    /* 
+       Format first/all other columns separetely:
+       see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
+    */
 
-td{
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    vertical-align: top;
-    text-align: center;
-}
+    td{
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: top;
+        text-align: center;
+    }
 
-td + td {
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: left;
-}
+    td + td {
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: left;
+    }
 
-.technical{
-    font-family: Courier; 
-    font-size: 15px;
-}
+    .technical{
+        font-family: Courier; 
+        font-size: 15px;
+    }
 
-#first_technical td{
-    /*make border between technical fields and normal data fields thick*/
-    border-top-width: 2px;
-}
+    #first_technical td{
+        /*make border between technical fields and normal data fields thick*/
+        border-top-width: 2px;
+    }

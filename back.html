@@ -32,33 +32,48 @@
         <th colspan=2>
             
             {{#note}}
-            <div id="note">
+            <div id="note">s
                 {{note}}
             </div>
             {{/note}}
 
-            <table id="reading_table">
+            {{^onyomi}}
+            {{#kunyomi}}
+                <div class="reading kun">
+                    {{kunyomi}}
+                </div>
+            {{/kunyomi}}
+            {{/onyomi}}
+
+            {{^kunyomi}}
+            {{#onyomi}}
+                <div class="reading on">
+                    {{onyomi}}
+                </div>
+            {{/onyomi}}
+            {{/kunyomi}}
+
+            {{#kunyomi}}
+            {{#onyomi}}
+            <table id="reading_table" align="center">
                 <tr>
 
-                {{#kunyomi}}
                 <td>
                 <div class="reading kun">
                     {{kunyomi}}
                 </div>
                 </td>
-                {{/kunyomi}}
                 
-                {{#onyomi}}
                 <td>
                 <div class="reading on">
                     {{onyomi}}
                 </div>
                 </td>
-                {{/onyomi}}
 
                 </tr>
             </table>
-
+            {{/onyomi}}
+            {{/kunyomi}}
 
         </th>
     </tr>
