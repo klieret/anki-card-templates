@@ -91,7 +91,14 @@
 
         <tr  id="tags">
             <td class="technical">T</td>
-            <td class="technical">{{Tags}}</td>
+            <td class="technical">
+                {{#Tags}}
+                {{Tags}}
+                {{/Tags}}
+                {{^Tags}}
+                None
+                {{/Tags}}
+            </td>
         </tr>
 
         <tr>
