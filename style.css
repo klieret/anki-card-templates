@@ -143,6 +143,17 @@ td + td {
     text-align: left;
 }
 
+
+a{
+    color: darksalmon;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: red;
+}
+
 /*-------------------------- Technical Information --------------------------*/
 
 .technical{
