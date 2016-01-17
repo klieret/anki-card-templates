@@ -144,14 +144,30 @@ td + td {
 }
 
 
-a{
-    color: darksalmon;
-    text-decoration: none;
+/*---------------------------------- Links ----------------------------------*/
 
+a{
+    color: black;
+    text-decoration: none;
 }
 
-a:hover{
-    color: red;
+.link{
+    border-radius: 25px;
+    margin: 0px;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: pink;
+}
+
+.link:hover{
+    background-color: salmon;
+}
+
+.link:active{
+    background-color: red;
 }
 
 /*-------------------------- Technical Information --------------------------*/

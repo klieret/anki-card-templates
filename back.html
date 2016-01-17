@@ -89,8 +89,9 @@
     <tr class="data_fields">
         <td>L</td>
         <td>
-            <a href="http://tangorin.com/kanji/{{text:Expression}}">TangorinKanji</a>
-            <a href="http://tangorin.com/general/{{text:Expression}}">TangorinGeneral</a>
+            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+            <div class="link"><a href="http://tangorin.com/examples/{{text:Expression}}">TExamples</a></div>
         </td>
     </tr>
 
@@ -122,6 +123,12 @@
     </tr>
     {{/kunyomi_story}}
     
+    {{#Image}}
+    <tr class="data_fields">
+        <td>I</td>
+        <td>{{Image}}</td>
+    {{/Image}}
+
     {{#kanji_examples}}
     <tr class="data_fields">
         <td>X</td>
