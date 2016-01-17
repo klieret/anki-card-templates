@@ -32,11 +32,11 @@
 
     <!-- ============================= Answer ============================= -->
 
-    <tr id="answer">
+    <tr id="an">
         <th colspan=2>
             
             {{#note}}
-            <div id="note">s
+            <div id="note">
                 {{note}}
             </div>
             {{/note}}
@@ -87,35 +87,35 @@
     <!-- *************************** Story & Co *************************** -->
 
     {{#heisig_keywords}}
-    <tr class="data_fields">>
+    <tr class="data_fields">
         <td>H</td>
         <td>{{heisig_keywords}}</td>
     </tr>
     {{/heisig_keywords}}
 
     {{#combined_story}}
-    <tr class="data_fields">>
+    <tr class="data_fields">
         <td>C</td>
         <td>{{combined_story}}</td>
     </tr>
     {{/combined_story}}
     
     {{#onyomi_story}}
-    <tr class="data_fields">>
+    <tr class="data_fields">
         <td>O</td>
         <td>{{onyomi_story}}</td>
     </tr>
     {{/onyomi_story}}
 
     {{#kunyomi_story}}
-    <tr class="data_fields">>
+    <tr class="data_fields">
         <td>K</td>
         <td>{{kunyomi_story}}</td>
     </tr>
     {{/kunyomi_story}}
     
     {{#kanji_examples}}
-    <tr class="data_fields">>
+    <tr class="data_fields">
         <td>X</td>
         <td>{{kanji_examples}}</td>
     </tr>
@@ -130,7 +130,7 @@
             {{Tags}}
             {{/Tags}}
             {{^Tags}}
-            None
+            [None]
             {{/Tags}}
         </td>
     </tr>
@@ -143,6 +143,11 @@
     <tr class="technical">
         <td>D</td>
         <td>{{Deck}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>C</td>
+        <td>{{Card}}</td>
     </tr>
 
 </table>

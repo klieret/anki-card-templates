@@ -106,10 +106,11 @@
     font-size: 20px
 }
 
-#answer{
+/*Answer*/
+#an{
 }
 
-#answer th{
+#an th{
     border-style: solid none solid; 
     border-top-width: 2px;
     border-bottom-width: 2px;
