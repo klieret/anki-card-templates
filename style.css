@@ -158,6 +158,8 @@ a{
     display: inline-block;
     padding-left: 8px;
     padding-right: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px; 
     background-color: pink;
 }
 
@@ -170,6 +172,7 @@ a{
 }
 
 #tools td{
+    vertical-align: center;
     border-top-width: 2px;
 }
 
