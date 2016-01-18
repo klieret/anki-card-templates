@@ -153,7 +153,6 @@ a{
 
 .link{
     border-radius: 25px;
-    margin: 0px;
     white-space: nowrap;
     display: inline;
     display: inline-block;
@@ -168,6 +167,10 @@ a{
 
 .link:active{
     background-color: red;
+}
+
+#tools td{
+    border-top-width: 2px;
 }
 
 /*-------------------------- Technical Information --------------------------*/

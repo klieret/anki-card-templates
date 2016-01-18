@@ -86,23 +86,11 @@
 
     <!-- *************************** Story & Co *************************** -->
 
-    <tr class="data_fields">
-        <td>L</td>
-        <td>
-            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
-            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
-            <div class="link"><a href="http://tangorin.com/examples/{{text:Expression}}">TExamples</a></div>
-        </td>
-    </tr>
 
     {{#heisig_keywords}}
     <tr class="data_fields">
         <td>H</td>
-        <td>
-            {{heisig_keywords}} 
-            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:heisig_keywords}}">Leo</a></div>
-            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:heisig_keywords}}">GImgs</a></div>
-        </td>
+        <td>{{heisig_keywords}}</td>
     </tr>
     {{/heisig_keywords}}
 
@@ -139,6 +127,19 @@
         <td>{{kanji_examples}}</td>
     </tr>
     {{/kanji_examples}}
+
+    <!-- ***************************** Tools ****************************** -->
+
+    <tr id="tools">
+        <td>T</td>
+        <td>
+            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+            <div class="link"><a href="http://tangorin.com/examples/{{text:Expression}}">TExamples</a></div>
+            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:heisig_keywords}}">HKLeo</a></div>
+            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:heisig_keywords}}">HKGImgs</a></div>
+        </td>
+    </tr>
 
     <!-- ********************* Technical Information ********************** -->
 
