@@ -1,0 +1,127 @@
+<table  id="main_frame">
+    
+    <!-- ============================ Question ============================ -->
+
+    <tr id="question">
+        <th colspan=2 id="question">
+            
+            <div id="meaning"> 
+                {{Meaning}} 
+            </div>
+            
+            {{#translation}}
+            <div id="meaning"> 
+                ({{translation}}) 
+            </div>
+            {{/translation}}
+        </th>
+    </tr>
+
+    <!-- ============================= Answer ============================= -->
+
+    <tr id="an">
+        <th colspan=2>
+            
+            {{#note}}
+            <div id="note">
+                {{note}}
+            </div>
+            {{/note}}
+
+            {{#Diagram}}
+            <div id="diagram">
+                {{Diagram}}
+            </div>
+            {{/Diagram}}
+
+            {{^Diagram}}
+            <!-- If Diagram isn't present, use a big version of the Expression -->
+            <div id="diagram_replace">
+                {{Expression}}
+            </div>
+            {{/Diagram}}
+
+        </th>
+    </tr>
+
+    <!-- ===================== Additional Information ===================== -->
+
+    {{#image}}
+    <tr class="data_fields">
+        <td>I</td>
+        <td>{{image}}</td>
+    {{/image}}
+
+    <!-- *************************** Story & Co *************************** -->
+
+    {{#story}}
+    <tr class="data_fields">
+        <td>S</td>
+        <td>{{story}}</td>
+    </tr>
+    {{/story}}
+
+    {{#heisig_index}}
+    <tr class="data_fields">
+        <td>H</td>
+        <td>{{heisig_index}}</td>
+    </tr>
+    {{/heisig_index}}
+
+    {{#other_meanings}}
+    <tr class="data_fields">
+        <td>M</td>
+        <td>{{other_meanings}}</td>
+    </tr>
+    {{/other_meanings}}
+    
+    {{#Examples}}
+    <tr class="data_fields">
+        <td>E</td>
+        <td>{{Examples}}</td>
+    </tr>
+    {{/Examples}}
+
+    <!-- ***************************** Tools ****************************** -->
+
+    <tr id="tools">
+        <td>T</td>
+        <td>
+            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+            <div class="link"><a href="http://tangorin.com/examples/{{text:Expression}}">TExamples</a></div>
+            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Meaning}}">HKLeo</a></div>
+            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Meaning}}">HKGImgs</a></div>
+        </td>
+    </tr>
+
+    <!-- ********************* Technical Information ********************** -->
+
+    <tr class="technical" id="first_technical">
+        <td>T</td>
+        <td>
+            {{#Tags}}
+            {{Tags}}
+            {{/Tags}}
+            {{^Tags}}
+            [None]
+            {{/Tags}}
+        </td>
+    </tr>
+
+    <tr class="technical">
+        <td>Y</td>
+        <td>{{Type}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>D</td>
+        <td>{{Deck}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>C</td>
+        <td>{{Card}}</td>
+    </tr>
+
+</table>
