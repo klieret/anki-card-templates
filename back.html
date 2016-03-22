@@ -84,8 +84,13 @@
 
     <!-- ===================== Additional Information ===================== -->
 
-    <!-- *************************** Story & Co *************************** -->
+    {{#Image}}
+    <tr class="data_fields">
+        <td>I</td>
+        <td>{{Image}}</td>
+    {{/Image}}
 
+    <!-- *************************** Story & Co *************************** -->
 
     {{#heisig_keywords}}
     <tr class="data_fields">
@@ -115,12 +120,6 @@
     </tr>
     {{/kunyomi_story}}
     
-    {{#Image}}
-    <tr class="data_fields">
-        <td>I</td>
-        <td>{{Image}}</td>
-    {{/Image}}
-
     {{#kanji_examples}}
     <tr class="data_fields">
         <td>X</td>
