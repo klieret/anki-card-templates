@@ -120,6 +120,12 @@
 
 /*========================= Additional Information ==========================*/
 
+#image td{
+    text-align: center;
+    padding-right: 20px;  /* compensate for td on the left to make it look 
+                             centered wrt the main frame */
+}
+
 /*------------------------------- Story & Co --------------------------------*/
 
 /* 

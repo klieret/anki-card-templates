@@ -41,8 +41,11 @@
             </div>
             {{/note}}
 
+            <!-- Different cases depending on what readings are present. -->
+
             {{^onyomi}}
             {{#kunyomi}}
+            <!-- Only Kunyomi -->
                 <div class="reading kun">
                     {{kunyomi}}
                 </div>
@@ -51,6 +54,7 @@
 
             {{^kunyomi}}
             {{#onyomi}}
+            <!-- Only Onyomi -->
                 <div class="reading on">
                     {{onyomi}}
                 </div>
@@ -59,6 +63,7 @@
 
             {{#kunyomi}}
             {{#onyomi}}
+            <!--Kunyomi and Onyomi -->
             <table id="reading_table" align="center">
                 <tr>
 
@@ -85,7 +90,7 @@
     <!-- ===================== Additional Information ===================== -->
 
     {{#Image}}
-    <tr class="data_fields">
+    <tr class="data_fields" id="image">
         <td>I</td>
         <td>{{Image}}</td>
     {{/Image}}
