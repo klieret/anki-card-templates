@@ -4,7 +4,7 @@
         <th colspan=2 style="text-align:center">
             
             <div id="reading">
-                {{Audio}}{{furigana:Reading}}
+                {{furigana:Reading}}
             </div>
 
             {{#hint_backward}}
@@ -31,7 +31,12 @@
         </th>
     </tr>
 
-    
+    {{#Audio}}
+    <tr>
+        <td id="element_name">A</td>
+        <td id="element_content">{{Audio}} </td>
+    </tr>
+    {{/Audio}}
 
     {{#heisig_keywords}}
     <tr>
