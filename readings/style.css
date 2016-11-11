@@ -1,0 +1,194 @@
+/*============================= General Styling =============================*/
+
+.card {
+    font-family: Arial; 
+    font-size: 20px;
+    vertical-align: top;
+    text-align: left;
+    color: black;
+    background-color: white;
+}
+
+.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+.mobile { font-family: "myfont"; }
+@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
+
+/*=============================== Main Frame ================================*/
+
+#main_frame {
+    border: solid;
+    border-width: 3px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#main_frame td, #main_frame tr{
+    border: 1px solid black;
+}
+
+/*================================ Question =================================*/
+
+#expression{
+    font-family: MSmincho;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+#question{
+    text-align: center;
+}
+
+ /*--------------------------------- BADGES ---------------------------------*/
+
+.badge{
+    font-family: MSmincho; 
+    font-size: 20px; 
+    border-radius: 25px;
+    margin: 0px;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.badge.kun{
+    background-color: orange;
+}
+
+.badge.on{
+    background-color: yellow;
+}
+
+.badge.number_of_readings{
+    background-color: tomato;
+}
+
+/*================================= Answer ==================================*/
+
+
+#reading_table{
+    border: none;
+    width: 100%;
+}
+
+#reading_table td{
+    border: none;
+    width:50%;
+    text-align: center;
+}
+
+#reading_table td:first-child{
+    border-right: solid;
+    border-right-width: 1px;
+    text-align: right;
+}
+
+#reading_table td:last-child{
+    text-align: left;
+}
+
+.reading{
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: left; 
+    font-weight: normal;
+    margin: 5px;
+    display: inline-block;
+}
+
+.reading.kun{}
+.reading.on{}
+
+#note{
+    font-size: 20px
+}
+
+/*Answer*/
+#an{
+}
+
+#an th{
+    border-style: solid none solid; 
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    text-align: center;
+}
+
+
+/*========================= Additional Information ==========================*/
+
+#image td{
+    text-align: center;
+    padding-right: 20px;  /* compensate for td on the left to make it look 
+                             centered wrt the main frame */
+}
+
+/*------------------------------- Story & Co --------------------------------*/
+
+/* 
+   Format first/all other columns separetely:
+   see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
+*/
+
+td{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    text-align: center;
+}
+
+td + td {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/*---------------------------------- Links ----------------------------------*/
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.link{
+    border-radius: 25px;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px; 
+    background-color: pink;
+}
+
+.link:hover{
+    background-color: salmon;
+}
+
+.link:active{
+    background-color: red;
+}
+
+#tools td{
+    vertical-align: center;
+    border-top-width: 2px;
+}
+
+/*-------------------------- Technical Information --------------------------*/
+
+.technical{
+    font-family: Courier; 
+    font-size: 15px;
+}
+
+#first_technical td{
+    /*make border between technical fields and normal data fields thick*/
+    border-top-width: 2px;
+}

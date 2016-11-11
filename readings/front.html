@@ -1,0 +1,33 @@
+<table  id="main_frame">
+    
+    <!-- ============================ Question ============================ -->
+
+    <tr  id="question">
+        <th colspan=2>
+            
+            <div id="expression"> 
+                {{Expression}} 
+            </div>
+            
+            {{#number_of_readings}}
+            <div class="badge number_of_readings">
+                {{number_of_readings}}x
+            </div>
+            {{/number_of_readings}}
+
+            {{#kunyomi}}
+            <div class="badge kun">
+                K
+            </div>
+            {{/kunyomi}}
+
+            {{#onyomi}}
+            <div class="badge on">
+                O
+            </div>
+            {{/onyomi}}
+        
+        </th>
+    </tr>
+
+</table>

@@ -1,0 +1,184 @@
+<table  id="main_frame">
+
+    <!-- ============================ Question ============================ -->
+
+    <tr id="question">
+        <th colspan=2>
+            
+            <div id="expression"> 
+                {{Expression}}
+            </div>
+
+            {{#number_of_readings}}
+            <div class="badge number_of_readings">
+                {{number_of_readings}}x
+            </div>
+            {{/number_of_readings}}
+
+            {{#kunyomi}}
+            <div class="badge kun">
+                K
+            </div>
+            {{/kunyomi}}
+
+            {{#onyomi}}
+            <div class="badge on">
+                O
+            </div>
+            {{/onyomi}}
+        
+        </th>
+    </tr>
+
+    <!-- ============================= Answer ============================= -->
+
+    <tr id="an">
+        <th colspan=2>
+            
+            {{#note}}
+            <div id="note">
+                {{note}}
+            </div>
+            {{/note}}
+
+            <!-- Different cases depending on what readings are present. -->
+
+            {{^onyomi}}
+            {{#kunyomi}}
+            <!-- Only Kunyomi -->
+                <div class="reading kun">
+                    {{kunyomi}}
+                </div>
+            {{/kunyomi}}
+            {{/onyomi}}
+
+            {{^kunyomi}}
+            {{#onyomi}}
+            <!-- Only Onyomi -->
+                <div class="reading on">
+                    {{onyomi}}
+                </div>
+            {{/onyomi}}
+            {{/kunyomi}}
+
+            {{#kunyomi}}
+            {{#onyomi}}
+            <!--Kunyomi and Onyomi -->
+            <table id="reading_table" align="center">
+                <tr>
+
+                <td>
+                <div class="reading kun">
+                    {{kunyomi}}
+                </div>
+                </td>
+                
+                <td>
+                <div class="reading on">
+                    {{onyomi}}
+                </div>
+                </td>
+
+                </tr>
+            </table>
+            {{/onyomi}}
+            {{/kunyomi}}
+
+        </th>
+    </tr>
+
+    <!-- ===================== Additional Information ===================== -->
+
+    {{#Image}}
+    <tr class="data_fields" id="image">
+        <td>I</td>
+        <td>{{Image}}</td>
+    {{/Image}}
+
+    <!-- *************************** Story & Co *************************** -->
+
+    {{#heisig_keywords}}
+    <tr class="data_fields">
+        <td>H</td>
+        <td>{{heisig_keywords}}</td>
+    </tr>
+    {{/heisig_keywords}}
+
+    {{#combined_story}}
+    <tr class="data_fields">
+        <td>C</td>
+        <td>{{combined_story}}</td>
+    </tr>
+    {{/combined_story}}
+    
+    {{#onyomi_story}}
+    <tr class="data_fields">
+        <td>O</td>
+        <td>{{onyomi_story}}</td>
+    </tr>
+    {{/onyomi_story}}
+
+    {{#kunyomi_story}}
+    <tr class="data_fields">
+        <td>K</td>
+        <td>{{kunyomi_story}}</td>
+    </tr>
+    {{/kunyomi_story}}
+    
+    {{#kanji_examples}}
+    <tr class="data_fields">
+        <td>X</td>
+        <td>{{kanji_examples}}</td>
+    </tr>
+    {{/kanji_examples}}
+
+    <!-- ***************************** Tools ****************************** -->
+
+    {{#Audio}}
+    <tr class="data_fields">
+        <td>A</td>
+        <td>{{Audio}}</td>
+    </tr>
+    {{/Audio}}
+
+    <tr id="tools">
+        <td>T</td>
+        <td>
+            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+            <div class="link"><a href="http://tangorin.com/examples/{{text:Expression}}">TExamples</a></div>
+            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:heisig_keywords}}">HKLeo</a></div>
+            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:heisig_keywords}}">HKGImgs</a></div>
+        </td>
+    </tr>
+
+    <!-- ********************* Technical Information ********************** -->
+
+    <tr class="technical" id="first_technical">
+        <td>T</td>
+        <td>
+            {{#Tags}}
+            {{Tags}}
+            {{/Tags}}
+            {{^Tags}}
+            [None]
+            {{/Tags}}
+        </td>
+    </tr>
+
+    <tr class="technical">
+        <td>Y</td>
+        <td>{{Type}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>D</td>
+        <td>{{Deck}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>C</td>
+        <td>{{Card}}</td>
+    </tr>
+
+</table>
