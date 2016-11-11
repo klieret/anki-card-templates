@@ -1,0 +1,105 @@
+.card {
+ font-family: "Aozora Mincho Medium";
+ font-size: 20px;
+ vertical-align:top;
+ text-align: left;
+ color: black;
+ background-color: white;
+}
+.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
+.mobile { font-family: "myfont"; }
+@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
+
+#main_frame {
+    border:solid;
+    border-width:3px;
+}
+
+#reading{
+    font-family: MSmincho;
+    font-size: 60px;
+    font-weight: normal
+}
+
+#meaning{
+    text-align:left;
+    font-size: 20px;
+    font-weight: normal
+}
+
+#meaning_reverse{
+    text-align:left;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 20px 20px 20px 20px;
+}
+
+#hint{
+    font-family: MSmincho; 
+    font-size: 30px; 
+    color:black;
+    border-radius: 25px;
+    margin: 0px;
+    /*border:2px solid red;*/
+    background-color:yellow;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#hint_backward{
+    font-family: MSmincho; 
+    font-size: 30px; 
+    color:black;
+    border-radius: 25px;
+    margin: 0px;
+    border:2px solid yellow
+    /*background-color:yellow;*/
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#reading{
+    font-family: MSMincho; 
+    font-size: 60px; 
+    text-align: center; 
+    font-weight: normal;
+    margin: 5px;
+}
+
+#alternate{
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: center; 
+    font-weight: normal;
+}
+
+
+#reading_tr{
+    border-style:solid none solid; 
+    border-width:2px;
+    text-align: center;
+}
+
+
+#element_name{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+}
+
+#element_content{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#examples_correction{
+    margin-top:-24px;
+}
