@@ -1,10 +1,12 @@
+# This script merges the 3 original git repositories
+# into one combined new one
+
 set -o xtrace # Print every command you run.
 
-set -e
+set -e # Abort as sooon as an error appears
 
 git init
-
-git add "${0}"
+git add "${0}"  # add this file to the new repository
 git commit -m "Script to merge all prior repositories."
 
 include(){
