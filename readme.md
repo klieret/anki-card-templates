@@ -18,9 +18,6 @@ Each template consists of 3 files:
 * A *Back Template* in HTML
 * A *Styling* in CSS
 
-The bottom level directories of this repository thus consist of either exactly those 3 files, or (if more than one card is generated out of one note), one shared styling file and several front/back templates.
-
 To use one of the templates, simply copy the contents of these files to the corresponding fields in the card editor (more information: [anki manual: cards & templates](https://apps.ankiweb.net/docs/manual.html#cards-and-templates)).
 
 ![card editor](https://cloud.githubusercontent.com/assets/13602468/24495230/cfb075be-1534-11e7-9739-3a63bf325cb2.png)
-
