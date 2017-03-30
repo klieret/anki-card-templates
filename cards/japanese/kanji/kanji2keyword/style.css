@@ -27,13 +27,19 @@
     border: 1px solid black;
 }
 
-/*================================ Question =================================*/
+
+/*================================ Question/Answer =================================*/
 
 #expression{
     font-family: MSmincho;
     font-size: 60px;
     font-weight: normal;
+}
 
+#meaning{
+    font-family: MSmincho;
+    font-size: 40px;
+    font-weight: normal;
 }
 
 #question{
@@ -41,8 +47,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-/*================================= Answer ==================================*/
 
 
 #note{
@@ -61,9 +65,6 @@
     font-weight: normal;
 }
 
-#meaning{
-    font-size: 40px;
-}
 
 /*========================= Additional Information ==========================*/
 
