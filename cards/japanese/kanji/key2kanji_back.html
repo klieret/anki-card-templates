@@ -5,15 +5,15 @@
     <tr id="question">
         <th colspan=2 id="question">
             
-            <div id="meaning"> 
-                {{Meaning}} 
+            <div id="keyword"> 
+                {{Keyword}} 
             </div>
             
-            {{#translation}}
-            <div id="meaning"> 
-                ({{translation}}) 
+            {{#Keyword_notes}}
+            <div id="keyword"> 
+                ({{Keyword_notes}}) 
             </div>
-            {{/translation}}
+            {{/Keyword_notes}}
         </th>
     </tr>
 
@@ -22,11 +22,11 @@
     <tr id="an">
         <th colspan=2>
             
-            {{#note}}
+            {{#Note}}
             <div id="note">
-                {{note}}
+                {{Note}}
             </div>
-            {{/note}}
+            {{/Note}}
 
             {{#Diagram}}
             <div id="diagram">
@@ -46,34 +46,34 @@
 
     <!-- ===================== Additional Information ===================== -->
 
-    {{#image}}
+    {{#Image}}
     <tr class="data_fields">
         <td>I</td>
-        <td>{{image}}</td>
-    {{/image}}
+        <td>{{Image}}</td>
+    {{/Image}}
 
     <!-- *************************** Story & Co *************************** -->
 
-    {{#story}}
+    {{#Kanji_kanji_story}}
     <tr class="data_fields">
         <td>S</td>
-        <td>{{story}}</td>
+        <td>{{Kanji_kanji_story}}</td>
     </tr>
-    {{/story}}
+    {{/Kanji_kanji_story}}
 
-    {{#heisig_index}}
+    {{#Heisig_index}}
     <tr class="data_fields">
         <td>H</td>
-        <td>{{heisig_index}}</td>
+        <td>{{Heisig_index}}</td>
     </tr>
-    {{/heisig_index}}
+    {{/Heisig_index}}
 
-    {{#other_meanings}}
+    {{#other_keywords}}
     <tr class="data_fields">
         <td>M</td>
-        <td>{{other_meanings}}</td>
+        <td>{{other_keywords}}</td>
     </tr>
-    {{/other_meanings}}
+    {{/other_keywords}}
     
     {{#Examples}}
     <tr class="data_fields">
@@ -87,12 +87,12 @@
     <tr id="tools">
         <td>T</td>
         <td>
-            <div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:heisig_index}}">Koohii</a></div>
+            <div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Heisig_index}}">Koohii</a></div>
             <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
             <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
             <div class="link"><a href="http://tangorin.com/examples/{{text:Expression}}">TExamples</a></div>
-            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Meaning}}">HKLeo</a></div>
-            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Meaning}}">HKGImgs</a></div>
+            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
+            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
         </td>
     </tr>
 
