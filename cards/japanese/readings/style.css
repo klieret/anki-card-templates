@@ -27,7 +27,8 @@
     border: 1px solid black;
 }
 
-/*================================ Question =================================*/
+
+/*================================ Question/Answer =================================*/
 
 #expression{
     font-family: MSmincho;
@@ -37,6 +38,14 @@
 
 #question{
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#keyword{
+    font-family: MSmincho;
+    font-size: 40px;
+    font-weight: normal;
 }
 
  /*--------------------------------- BADGES ---------------------------------*/
@@ -115,6 +124,7 @@
     border-top-width: 2px;
     border-bottom-width: 2px;
     text-align: center;
+    font-weight: normal;
 }
 
 

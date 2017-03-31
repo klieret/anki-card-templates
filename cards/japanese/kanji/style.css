@@ -36,18 +36,80 @@
     font-weight: normal;
 }
 
-#keyword{
-    font-family: MSmincho;
-    font-size: 40px;
-    font-weight: normal;
-}
-
 #question{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+#keyword{
+    font-family: MSmincho;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+ /*--------------------------------- BADGES ---------------------------------*/
+
+.badge{
+    font-family: MSmincho; 
+    font-size: 20px; 
+    border-radius: 25px;
+    margin: 0px;
+    white-space: nowrap;
+    display: inline;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.badge.kun{
+    background-color: orange;
+}
+
+.badge.on{
+    background-color: yellow;
+}
+
+.badge.number_of_readings{
+    background-color: tomato;
+}
+
+/*================================= Answer ==================================*/
+
+
+#reading_table{
+    border: none;
+    width: 100%;
+}
+
+#reading_table td{
+    border: none;
+    width:50%;
+    text-align: center;
+}
+
+#reading_table td:first-child{
+    border-right: solid;
+    border-right-width: 1px;
+    text-align: right;
+}
+
+#reading_table td:last-child{
+    text-align: left;
+}
+
+.reading{
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: left; 
+    font-weight: normal;
+    margin: 5px;
+    display: inline-block;
+}
+
+.reading.kun{}
+.reading.on{}
 
 #note{
     font-size: 20px
@@ -67,6 +129,12 @@
 
 
 /*========================= Additional Information ==========================*/
+
+#image td{
+    text-align: center;
+    padding-right: 20px;  /* compensate for td on the left to make it look 
+                             centered wrt the main frame */
+}
 
 /*------------------------------- Story & Co --------------------------------*/
 
