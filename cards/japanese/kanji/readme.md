@@ -1,9 +1,10 @@
 # Kanji Card Templates
 
-Templates for the two card types
+Templates for the three card types
 
 * *kanji2key*: Kanji => Keyword (meaning)
 * *key2kanji*: Keyword (meaning) => Kanji
+* *kanji2readings*: Kanji => Readings (pronounciations)
 
 ## Kanji2Key
 
@@ -12,3 +13,7 @@ Templates for the two card types
 ## Key2Kanji
 
 ![key2kanji_1](https://cloud.githubusercontent.com/assets/13602468/24496893/f1217126-1539-11e7-8ce8-fe9b620ca914.png)
+
+## Kanji2Readings
+
+![1.png](https://bitbucket.org/repo/8bdzbo/images/2643889851-1.png)

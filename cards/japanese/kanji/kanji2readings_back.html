@@ -43,25 +43,25 @@
 
             <!-- Different cases depending on what readings are present. -->
 
-            {{^onyomi}}
-            {{#kunyomi}}
+            {{^Onyomi}}
+            {{#Kunyomi}}
             <!-- Only Kunyomi -->
                 <div class="reading kun">
-                    {{kunyomi}}
+                    {{Kunyomi}}
                 </div>
-            {{/kunyomi}}
+            {{/Kunyomi}}
             {{/Onyomi}}
 
-            {{^kunyomi}}
+            {{^Kunyomi}}
             {{#Onyomi}}
             <!-- Only Onyomi -->
                 <div class="reading on">
                     {{Onyomi}}
                 </div>
             {{/Onyomi}}
-            {{/kunyomi}}
+            {{/Kunyomi}}
 
-            {{#kunyomi}}
+            {{#Kunyomi}}
             {{#Onyomi}}
             <!--Kunyomi and Onyomi -->
             <table id="reading_table" align="center">
@@ -69,7 +69,7 @@
 
                 <td>
                 <div class="reading kun">
-                    {{kunyomi}}
+                    {{Kunyomi}}
                 </div>
                 </td>
                 
@@ -82,7 +82,7 @@
                 </tr>
             </table>
             {{/Onyomi}}
-            {{/kunyomi}}
+            {{/Kunyomi}}
 
         </th>
     </tr>
@@ -125,12 +125,12 @@
     </tr>
     {{/Kunyomi_story}}
     
-    {{#kanji_examples}}
+    {{#Examples}}
     <tr class="data_fields">
         <td>X</td>
-        <td>{{kanji_examples}}</td>
+        <td>{{Examples}}</td>
     </tr>
-    {{/kanji_examples}}
+    {{/Examples}}
 
     <!-- ***************************** Tools ****************************** -->
 
