@@ -9,11 +9,11 @@
                 {{Expression}}
             </div>
 
-            {{#number_of_readings}}
+            {{#Number_of_readings}}
             <div class="badge number_of_readings">
-                {{number_of_readings}}x
+                {{Number_of_readings}}x
             </div>
-            {{/number_of_readings}}
+            {{/Number_of_readings}}
 
             {{#kunyomi}}
             <div class="badge kun">
@@ -21,11 +21,11 @@
             </div>
             {{/kunyomi}}
 
-            {{#onyomi}}
+            {{#Onyomi}}
             <div class="badge on">
                 O
             </div>
-            {{/onyomi}}
+            {{/Onyomi}}
         
         </th>
     </tr>
@@ -35,11 +35,11 @@
     <tr id="an">
         <th colspan=2>
             
-            {{#note}}
+            {{#Note}}
             <div id="note">
-                {{note}}
+                {{Note}}
             </div>
-            {{/note}}
+            {{/Note}}
 
             <!-- Different cases depending on what readings are present. -->
 
@@ -50,19 +50,19 @@
                     {{kunyomi}}
                 </div>
             {{/kunyomi}}
-            {{/onyomi}}
+            {{/Onyomi}}
 
             {{^kunyomi}}
-            {{#onyomi}}
+            {{#Onyomi}}
             <!-- Only Onyomi -->
                 <div class="reading on">
-                    {{onyomi}}
+                    {{Onyomi}}
                 </div>
-            {{/onyomi}}
+            {{/Onyomi}}
             {{/kunyomi}}
 
             {{#kunyomi}}
-            {{#onyomi}}
+            {{#Onyomi}}
             <!--Kunyomi and Onyomi -->
             <table id="reading_table" align="center">
                 <tr>
@@ -75,13 +75,13 @@
                 
                 <td>
                 <div class="reading on">
-                    {{onyomi}}
+                    {{Onyomi}}
                 </div>
                 </td>
 
                 </tr>
             </table>
-            {{/onyomi}}
+            {{/Onyomi}}
             {{/kunyomi}}
 
         </th>
@@ -97,33 +97,33 @@
 
     <!-- *************************** Story & Co *************************** -->
 
-    {{#heisig_keywords}}
+    {{#Heisig_keywords}}
     <tr class="data_fields">
         <td>H</td>
-        <td>{{heisig_keywords}}</td>
+        <td>{{Heisig_keywords}}</td>
     </tr>
-    {{/heisig_keywords}}
+    {{/Heisig_keywords}}
 
-    {{#combined_story}}
+    {{#Combined_story}}
     <tr class="data_fields">
         <td>C</td>
-        <td>{{combined_story}}</td>
+        <td>{{Combined_story}}</td>
     </tr>
-    {{/combined_story}}
+    {{/Combined_story}}
     
-    {{#onyomi_story}}
+    {{#Onyomi_story}}
     <tr class="data_fields">
         <td>O</td>
-        <td>{{onyomi_story}}</td>
+        <td>{{Onyomi_story}}</td>
     </tr>
-    {{/onyomi_story}}
+    {{/Onyomi_story}}
 
-    {{#kunyomi_story}}
+    {{#Kunyomi_story}}
     <tr class="data_fields">
         <td>K</td>
-        <td>{{kunyomi_story}}</td>
+        <td>{{Kunyomi_story}}</td>
     </tr>
-    {{/kunyomi_story}}
+    {{/Kunyomi_story}}
     
     {{#kanji_examples}}
     <tr class="data_fields">
