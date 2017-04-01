@@ -18,13 +18,16 @@
 
 #main_frame {
     border: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-collapse: collapse;
     width: 100%;
+    border-color:#39CCCC;
 }
 
 #main_frame td, #main_frame tr{
-    border: 1px solid black;
+    border: solid;
+    border-width: 1px;
+    border-color:#39CCCC;
 }
 
 
@@ -62,6 +65,7 @@
     border-style: solid none solid; 
     border-top-width: 2px;
     border-bottom-width: 2px;
+    border-color:#39CCCC#39CCCC;
     text-align: center;
     font-weight: normal;
 }
@@ -113,6 +117,7 @@
     border-right: solid;
     border-right-width: 1px;
     text-align: right;
+    border-color:black;
 }
 
 #reading_table td:last-child{
@@ -192,6 +197,7 @@ a{
 #tools td{
     vertical-align: center;
     border-top-width: 2px;
+    border-color:#39CCCC
 }
 
 /*+++++++++++++++++++++++++++++++++ Technical Information ++++++++++++++++++++++++++*/
@@ -204,4 +210,5 @@ a{
 #first_technical td{
     /*make border between technical fields and normal data fields thick*/
     border-top-width: 2px;
+    border-color:#39CCCC;
 }
