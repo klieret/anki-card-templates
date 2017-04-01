@@ -21,13 +21,13 @@
     border-width: 2px;
     border-collapse: collapse;
     width: 100%;
-    border-color:#39CCCC;
+    border-color:#000000;
 }
 
 #main_frame td, #main_frame tr{
     border: solid;
     border-width: 1px;
-    border-color:#39CCCC;
+    border-color:#000000;
 }
 
 
@@ -65,7 +65,7 @@
     border-style: solid none solid; 
     border-top-width: 2px;
     border-bottom-width: 2px;
-    border-color:#39CCCC#39CCCC;
+    border-color:#000000#000000;
     text-align: center;
     font-weight: normal;
 }
@@ -197,7 +197,7 @@ a{
 #tools td{
     vertical-align: center;
     border-top-width: 2px;
-    border-color:#39CCCC
+    border-color:#000000
 }
 
 /*+++++++++++++++++++++++++++++++++ Technical Information ++++++++++++++++++++++++++*/
@@ -210,5 +210,5 @@ a{
 #first_technical td{
     /*make border between technical fields and normal data fields thick*/
     border-top-width: 2px;
-    border-color:#39CCCC;
+    border-color:#000000;
 }
