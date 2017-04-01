@@ -176,6 +176,8 @@ a{
 
 .link{
     border-radius: 25px;
+    border: solid;
+    border-width: 1px;
     white-space: nowrap;
     display: inline;
     display: inline-block;
@@ -183,15 +185,16 @@ a{
     padding-right: 8px;
     margin-bottom: 5px;
     margin-top: 5px; 
-    background-color: pink;
+    background-color: white;
 }
 
 .link:hover{
-    background-color: salmon;
+    font-weight: bold;
+    background-color: white;
 }
 
 .link:active{
-    background-color: red;
+    background-color: white;
 }
 
 #tools td{
