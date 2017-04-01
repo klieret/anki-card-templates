@@ -37,6 +37,7 @@
 }
 
 #question{
+    font-weight: normal;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -50,6 +51,7 @@
 
 #note{
     font-size: 20px
+    font-weight: normal
 }
 
 /*Answer*/
