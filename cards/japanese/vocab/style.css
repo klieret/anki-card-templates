@@ -1,3 +1,5 @@
+/*============================= General Styling =============================*/
+
 .card {
  font-family: "Aozora Mincho Medium";
  font-size: 20px;
@@ -6,20 +8,43 @@
  color: black;
  background-color: white;
 }
+
 .linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
 .mobile { font-family: "myfont"; }
 @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
 @font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
 
+/*=============================== Main Frame ================================*/
+
 #main_frame {
-    border:solid;
-    border-width:3px;
+    border: solid;
+    border-width: 3px;
+    border-collapse: collapse;
+    width: 100%;
 }
 
+/*================================ Question/Answer =================================*/
+
 #reading{
-    font-family: MSmincho;
-    font-size: 60px;
-    font-weight: normal
+    font-family: MSMincho; 
+    font-size: 60px; 
+    text-align: center; 
+    font-weight: normal;
+    margin: 5px;
+}
+
+#alternate{
+    font-family: MSMincho; 
+    font-size: 40px; 
+    text-align: center; 
+    font-weight: normal;
+}
+
+
+#reading_tr{
+    border-style:solid none solid; 
+    border-width:2px;
+    text-align: center;
 }
 
 #meaning{
@@ -64,27 +89,9 @@
     text-align: center;
 }
 
-#reading{
-    font-family: MSMincho; 
-    font-size: 60px; 
-    text-align: center; 
-    font-weight: normal;
-    margin: 5px;
-}
-
-#alternate{
-    font-family: MSMincho; 
-    font-size: 40px; 
-    text-align: center; 
-    font-weight: normal;
-}
 
 
-#reading_tr{
-    border-style:solid none solid; 
-    border-width:2px;
-    text-align: center;
-}
+
 
 
 #element_name{

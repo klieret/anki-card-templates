@@ -48,7 +48,26 @@
     font-weight: normal;
 }
 
- /*--------------------------------- BADGES ---------------------------------*/
+#note{
+    font-size: 20px
+}
+
+/*Answer*/
+#an{
+}
+
+#an th{
+    border-style: solid none solid; 
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+/*+++++++++++++++++++++++++++++++++ kanji2readings +++++++++++++++++++++++++++++++++*/
+
+/*--------------------------------- BADGES ---------------------------------*/
 
 .badge{
     font-family: MSmincho; 
@@ -75,9 +94,6 @@
     background-color: tomato;
 }
 
-/*================================= Answer ==================================*/
-
-
 #reading_table{
     border: none;
     width: 100%;
@@ -88,6 +104,8 @@
     width:50%;
     text-align: center;
 }
+
+/*+++++++++++++++++++++++++++++++++ formatting readings +++++++++++++++++++++++++++++++++*/
 
 #reading_table td:first-child{
     border-right: solid;
@@ -111,23 +129,6 @@
 .reading.kun{}
 .reading.on{}
 
-#note{
-    font-size: 20px
-}
-
-/*Answer*/
-#an{
-}
-
-#an th{
-    border-style: solid none solid; 
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    text-align: center;
-    font-weight: normal;
-}
-
-
 /*========================= Additional Information ==========================*/
 
 #image td{
@@ -136,7 +137,7 @@
                              centered wrt the main frame */
 }
 
-/*------------------------------- Story & Co --------------------------------*/
+/*+++++++++++++++++++++++++++++++++ Story & Co ++++++++++++++++++++++++++*/
 
 /* 
    Format first/all other columns separetely:
@@ -159,7 +160,7 @@ td + td {
     text-align: left;
 }
 
-/*---------------------------------- Links ----------------------------------*/
+/*+++++++++++++++++++++++++++++++++ Links ++++++++++++++++++++++++++*/
 
 a{
     color: black;
@@ -191,7 +192,7 @@ a{
     border-top-width: 2px;
 }
 
-/*-------------------------- Technical Information --------------------------*/
+/*+++++++++++++++++++++++++++++++++ Technical Information ++++++++++++++++++++++++++*/
 
 .technical{
     font-family: Courier; 
