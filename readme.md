@@ -21,3 +21,7 @@ Each template consists of 3 files:
 To use one of the templates, simply copy the contents of these files to the corresponding fields in the card editor (more information: [anki manual: cards & templates](https://apps.ankiweb.net/docs/manual.html#cards-and-templates)).
 
 ![card editor](https://cloud.githubusercontent.com/assets/13602468/24495230/cfb075be-1534-11e7-9739-3a63bf325cb2.png)
+
+## License
+
+The contents of this repository are licensed under the [*AGPL3* license](https://choosealicense.com/licenses/agpl-3.0/) (to be compatible with the license of Anki and its addons as detailed [here](https://ankiweb.net/account/terms)).
