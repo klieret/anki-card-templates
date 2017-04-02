@@ -138,10 +138,16 @@
 
 /*========================= Additional Information ==========================*/
 
-#image td{
-    text-align: center;
-    padding-right: 20px;  /* compensate for td on the left to make it look 
+#image{
+    text-align: left;
+    /*padding-right: 20px;/*  /* compensate for td on the left to make it look 
                              centered wrt the main frame */
+}
+
+#image img{
+    max-height:200px;
+    width: auto;
+    height: auto;
 }
 
 /*+++++++++++++++++++++++++++++++++ Story & Co ++++++++++++++++++++++++++*/
