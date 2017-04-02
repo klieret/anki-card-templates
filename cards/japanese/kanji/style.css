@@ -138,6 +138,19 @@
 
 /*========================= Additional Information ==========================*/
 
+.index_circle{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid;
+  border-width: 1px;
+  font-size: 20px;
+  text-align: left;
+  text-align: center;
+  background:white;
+  line-height:60px
+}
+
 #image td{
     text-align: center;
     padding-right: 20px;  /* compensate for td on the left to make it look 
