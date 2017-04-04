@@ -35,7 +35,7 @@
 
 #expression{
     font-family: MSmincho;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: normal;
 }
 
@@ -78,26 +78,28 @@
 .badge{
     font-family: MSmincho; 
     font-size: 20px; 
-    border-radius: 25px;
+    border-radius: 0px;
+    border: solid;
+    border-width: 1px;
     margin: 0px;
     white-space: nowrap;
     display: inline;
     display: inline-block;
     margin-bottom: 10px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 .badge.kun{
-    background-color: orange;
+    background-color: #01FF70;
 }
 
 .badge.on{
-    background-color: yellow;
+    background-color: #7FDBFF;
 }
 
 .badge.number_of_readings{
-    background-color: tomato;
+    background-color: #F012BE;
 }
 
 #reading_table{
