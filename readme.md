@@ -10,6 +10,8 @@ In this repository I host the templates I created for studying Japanese.
 
 Usually two cards are generated from each note: E.g. from a note containing the fields ```Kanji: 金```, ```Keyword: Gold```, I can generate a card asking for the kanji corresponding to the keyword "gold" or a card asking for the keyword corresponding to the kanji "金". This corresponds to two templates.
 
+![phone screenshot](https://github.com/klieret/readme-files/blob/master/anki-card-templates/phone.png)
+
 ## The files in this repository
 
 Each template consists of 3 files:
@@ -27,7 +29,7 @@ I use two different note types for learning Japanese
 
 To use one of the templates, simply copy the contents of these files to the corresponding fields in the card editor. You can get to the card editor from the Anki main window via ```Tools``` → ```Manage note types``` → select your note → click on ```Cards``` → select the card type you want to edit or add a new one (more information on how to get there [anki manual: cards & templates](https://apps.ankiweb.net/docs/manual.html#cards-and-templates)).
 
-![card editor](https://cloud.githubusercontent.com/assets/13602468/24746203/87fe3e7a-1ab8-11e7-804c-57a71e9427af.png)
+![card editor](https://github.com/klieret/readme-files/blob/master/anki-card-templates/card_editor.png)
 
 ## License
 
