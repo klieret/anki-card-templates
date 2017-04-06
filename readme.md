@@ -23,7 +23,7 @@ I use two different note types for learning Japanese
 * *kanji*: Keyword (meaning of the Kanji) ↔ Kanji → Reading (3 templates)
 * *vocab*: Japanese Expression ↔ Meaning (2 templates)
 
-# Installation
+## Installation
 
 To use one of the templates, simply copy the contents of these files to the corresponding fields in the card editor. You can get to the card editor from the Anki main window via ```Tools``` → ```Manage note types``` → select your note → click on ```Cards``` → select the card type you want to edit or add a new one (more information on how to get there [anki manual: cards & templates](https://apps.ankiweb.net/docs/manual.html#cards-and-templates)).
 
