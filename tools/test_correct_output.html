@@ -1,0 +1,17 @@
+Text that should not be replaced.
+
+stuff {{#new name}}
+some stuff {{new name}}
+{{/old_name}}
+
+old name <-- should not be replaced
+
+{{#Old name}} <-- should not be replaced
+
+some stuff {{new name}}
+
+{{^new name}}
+{{new name}}
+{{/new name}}
+
+other stuff that should not be replaced.
