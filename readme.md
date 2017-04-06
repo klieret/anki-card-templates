@@ -10,7 +10,12 @@ In this repository I host the templates I created for studying Japanese.
 
 Usually two cards are generated from each note: E.g. from a note containing the fields ```Kanji: 金```, ```Keyword: Gold```, I can generate a card asking for the kanji corresponding to the keyword "gold" or a card asking for the keyword corresponding to the kanji "金". This corresponds to two templates.
 
+## Features
+
 ![phone screenshot](https://github.com/klieret/readme-files/blob/master/anki-card-templates/phone.png)
+
+* Conditional Card Creation: Cards will only be created if there is a sensible Question/Answer pair.
+* Lookup buttons: Row of buttons to look up Expression on different dictionaries/kanji.koohii/google images etc.
 
 ## The files in this repository
 

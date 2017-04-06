@@ -33,12 +33,12 @@ Templates for the three card types
 
 ## Kanji2Key
 
-![kanji2key_1](https://cloud.githubusercontent.com/assets/13602468/24496976/310540ce-153a-11e7-9ecb-5c5a44afda3e.png)
+![kanji2key_1](https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/kanji2key.png)
 
 ## Key2Kanji
 
-![key2kanji_1](https://cloud.githubusercontent.com/assets/13602468/24496893/f1217126-1539-11e7-8ce8-fe9b620ca914.png)
+![key2kanji_1](https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/key2kanji.png)
 
 ## Kanji2Readings
 
-![1.png](https://bitbucket.org/repo/8bdzbo/images/2643889851-1.png)
+![1.png](https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/kanji2readings.png)
