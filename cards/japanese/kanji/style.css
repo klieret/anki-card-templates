@@ -146,10 +146,12 @@
                              centered wrt the main frame */
 }
 
-#image img{
-    max-height:200px;
-    width: auto;
+
+#image img {
     height: auto;
+    width: 300px;
+    max-height: 500px;
+    margin: 3px;
 }
 
 /*+++++++++++++++++++++++++++++++++ Story & Co ++++++++++++++++++++++++++*/
