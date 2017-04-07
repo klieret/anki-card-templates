@@ -213,6 +213,25 @@ a{
     border-color:#000000
 }
 
+.aligncenter{
+
+    display: inline-block;
+	float: center;
+	margin:0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+#container {
+    width:100%;
+    text-align:center;
+}
+
 /*+++++++++++++++++++++++++++++++++ Technical Information ++++++++++++++++++++++++++*/
 
 .technical{

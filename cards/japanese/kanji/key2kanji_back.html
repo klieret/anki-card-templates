@@ -21,7 +21,16 @@
 
     <tr id="an">
         <th colspan=2>
-            
+<span id="container">
+<span class="alignright">
+            	<div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div><br>
+            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div><br>
+            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div><br>
+            <div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div><br>
+            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div><br>
+            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
+	        </span>
+
             {{#Note}}
             <div id="note">
                 {{Note}}
@@ -29,18 +38,18 @@
             {{/Note}}
 
             {{#Diagram}}
-            <div id="diagram">
+            <div id="diagram" class="aligncenter">
                 {{Diagram}}
             </div>
             {{/Diagram}}
-
             {{^Diagram}}
             <!-- If Diagram isn't present, use a big version of the Expression -->
-            <div id="diagram_replace">
+            <div id="diagram_replace" class="aligncenter">
                 {{Expression}}
             </div>
             {{/Diagram}}
-
+		
+</span>
         </th>
     </tr>
 
