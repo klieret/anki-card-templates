@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -e
+
+echo "*** RENDERING KANJI CARDS ***"
+
+sh ../cards/japanese/kanj/bulk_mock.sh
+
+echo "done."
