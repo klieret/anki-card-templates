@@ -4,6 +4,6 @@ set -e
 
 echo "*** RENDERING KANJI CARDS ***"
 
-sh ../cards/japanese/kanj/bulk_mock.sh
+sh $HOME/Documents/prog/japan/anki/cards/cards/japanese/kanji/bulk_mock.sh
 
 echo "done."

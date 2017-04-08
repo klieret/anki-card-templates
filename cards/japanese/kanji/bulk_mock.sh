@@ -5,8 +5,8 @@
 
 set -e  # abort if errors
 
-mock_field_folder="$(pwd)/mock_fields"
-template_folder="$(pwd)"
+mock_field_folder="$HOME/Documents/prog/japan/anki/cards/cards/japanese/kanji/mock_fields"
+template_folder="$HOME/Documents/prog/japan/anki/cards/cards/japanese/kanji/"
 source_path="$HOME/Documents/prog/japan/anki/card-tester/"
 output_path="$HOME/Documents/prog/readme_files/anki-card-templates/cards/japanese/kanji/html_rendered"
 
