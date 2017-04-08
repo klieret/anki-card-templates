@@ -21,8 +21,8 @@ Usually two cards are generated from each note: E.g. from a note containing the 
 
 I use two different note types for learning Japanese
 
-* *kanji*: Keyword (meaning of the Kanji) ↔ Kanji → Reading (3 templates). [Click here for to check out the kanji templates.](https://github.com/klieret/anki-card-templates/tree/master/cards/japanese/kanji)
-* *vocab*: Japanese Expression ↔ Meaning (2 templates). [Click here for to check out the vocab templates.](https://github.com/klieret/anki-card-templates/tree/master/cards/japanese/vocab)
+* *kanji*: Keyword (meaning of the Kanji) ↔ Kanji → Reading (3 templates). [Click here to check out the kanji templates.](https://github.com/klieret/anki-card-templates/tree/master/cards/japanese/kanji)
+* *vocab*: Japanese Expression ↔ Meaning (2 templates). [Click for to check out the vocab templates.](https://github.com/klieret/anki-card-templates/tree/master/cards/japanese/vocab)
 
 ## Installation
 
