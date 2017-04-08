@@ -30,15 +30,29 @@ Templates for the three card types
 |18| ```Diagram``` |  Stroke diagram of the kanji  |  automatic | 
 |19| ```Heisig_index``` |  Index that James Heisig gave the Kanji  |  automatic | 
 
+## HTML previews
 
-## Kanji2Key
+should be automatically updated:
+
+* [note.py_kanji2key_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/note.py_kanji2key_back.html)
+* [note.py_kanji2key_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/note.py_kanji2key_front.html)
+* [note.py_kanji2readings_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/note.py_kanji2readings_back.html)
+* [note.py_kanji2readings_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/note.py_kanji2readings_front.html)
+* [note.py_key2kanji_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/note.py_key2kanji_back.html)
+* [note.py_key2kanji_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/note.py_key2kanji_front.html)
+
+## Screenshots
+
+The screenshots are generally less often updated than the html previews.
+
+### Kanji2Key
 
 ![kanji2key_1](https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/kanji2key.png)
 
-## Key2Kanji
+### Key2Kanji
 
 ![key2kanji_1](https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/key2kanji.png)
 
-## Kanji2Readings
+### Kanji2Readings
 
 ![1.png](https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/kanji2readings.png)
