@@ -6,4 +6,9 @@ echo "*** RENDERING KANJI CARDS ***"
 
 sh $HOME/Documents/prog/japan/anki/cards/cards/japanese/kanji/bulk_mock.sh
 
-echo "done."
+echo "done. Press Enter to continue."
+
+# Allows us to read user input below, assigns stdin to keyboard
+exec < /dev/tty
+
+read continue
