@@ -1,14 +1,6 @@
-/*============================= General Styling =============================*/
-
-.card {
+body{
     font-family: Sans; 
-    font-size: 20px;
-    vertical-align: top;
-    text-align: left;
-    color: black;
-    background-color: white;
 }
-
 
 table {
     border-collapse: collapse;
@@ -20,11 +12,16 @@ th, td {
     padding: 8px;
 }
 
-tr{
-    background-color: #ffffff;
+.block tr{
+    width=100%;
+    background-color: #f2f2f2;
 }
 
-tr:nth-child(even){background-color: #f2f2f2}
+.details tr{
+    background-color: #f2f2f2;
+}
+
+.details tr:nth-child(even){background-color: #ffffff}
 
 th {
     background-color: #4CAF50;
@@ -57,16 +54,6 @@ th {
     font-weight: normal;
 }
 
-#tools{
-    text-align: center;
-}
-
-#story{
-    font-family: Sans;
-    border: none;
-    border-width: 1px;
-    background-color: #ecf9ec;
-}
 
 #note{
     text-align: center;
@@ -85,19 +72,19 @@ th {
 
 /*========================= Additional Information ==========================*/
 
-#image{
-    text-align: left;
-    /*padding-right: 20px;/*  /* compensate for td on the left to make it look 
-                             centered wrt the main frame */
+
+.image-container {
+    overflow:auto;   
+    white-space: nowrap;
+    height: 300px;
+    }
+
+.image-container img {
+    margin: 0px;
+    max-height: 300px;
+    max-width:300px;
 }
 
-
-#image img {
-    height: auto;
-    width: 300px;
-    max-height: 500px;
-    margin: 3px;
-}
 
 /*+++++++++++++++++++++++++++++++++ Story & Co ++++++++++++++++++++++++++*/
 
@@ -142,19 +129,6 @@ a{
     vertical-align: center;
     border-top-width: 2px;
     border-color:#000000
-}
-
-/*+++++++++++++++++++++++++++++++++ Technical Information ++++++++++++++++++++++++++*/
-
-.technical{
-    font-family: Sans; 
-    font-size: 15px;
-}
-
-#first_technical td{
-    /*make border between technical fields and normal data fields thick*/
-    border-top-width: 2px;
-    border-color:#000000;
 }
 
 

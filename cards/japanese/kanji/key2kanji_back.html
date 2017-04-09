@@ -1,5 +1,3 @@
-<div id="question">
-
 <div id="keyword"> 
     {{Keyword}} 
 </div>
@@ -10,10 +8,8 @@
 </div>
 {{/Keyword_notes}}
 
-</div>
-
-<!-- ============================= Answer ============================= -->
-
+<!-- answer -->
+            
 {{#Note}}
 <div id="note">
     {{Note}}
@@ -33,62 +29,84 @@
 </div>
 {{/Diagram}}
 
-<!-- ===================== Additional Information ===================== -->
-
+<table class="block">
+<tr><th>Mnemonic</th></tr>
 {{#Kanji_image}}
-    {Kanji_image}}
+<tr>
+<td class="image-container">{{Kanji_image}}</td>
 {{/Kanji_image}}
 
-<!-- *************************** Story & Co *************************** -->
-
-<table style="font-family: Sans">
-<tr>
-<th>Story</th>
-</tr>
 {{#Kanji_story}}
-    <tr><td>{{Kanji_story}}</td></tr>
-{{/Kanji_story}}
-</table>
-<!-- ***************************** Tools ****************************** -->
-<ul class="button-group">
-<li><a class="btn" href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii <span class="arrow">❯</span></a></li>
-<li><a class="btn" href="http://tangorin.com/kanji/{{text:Expression}}">TKanji <span class="arrow">❯</span></a></li>
-<li><a class="btn" href="http://tangorin.com/general/{{text:Expression}}">TGeneral <span class="arrow">❯</span></a></li>
-<li><a class="btn" href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples <span class="arrow">❯</span></a></li>
-<li><a class="btn" href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo <span class="arrow">❯</span></a></li>
-<li><a class="btn" href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></li>
-</ul>
-
-<table class="technical">
 <tr>
-<th>Attribute</th>
-<th>Value</th>
+<td>{{Kanji_story}}</td>
 </tr>
-    <tr class="technical" id="first_technical">
-        <td>Tags</td>
-        <td>
-            {{#Tags}}
-            {{Tags}}
-            {{/Tags}}
-            {{^Tags}}
-            [None]
-            {{/Tags}}
-        </td>
-    </tr>
+{{/Kanji_story}}
 
-    <tr class="technical">
-        <td>Note type</td>
-        <td>{{Type}}</td>
-    </tr>
+{{#Kanji_examples}}
+<tr>
+<th>Examples</th>
+</tr>
+<tr>
+<td>{{Kanji_examples}}</td>
+</tr>
+{{/Kanji_examples}}
+</table>
 
-    <tr class="technical">
-        <td>Deck</td>
-        <td>{{Deck}}</td>
-    </tr>
 
-    <tr class="technical">
-        <td>Card type</td>
-        <td>{{Card}}</td>
-    </tr>
+
+<!-- ***************************** Tools ****************************** -->
+
+<div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
+<div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+<div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+<div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div>
+<div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
+<div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
+
+
+<!-- ===================== Additional Information ===================== -->
+
+<table class="details">
+<tr><th>Field</th><th>Value</th></tr>
+ 
+{{#Heisig_index}}
+<tr>
+<td>Heisig Index</td>
+<td>{{Heisig_index}}</td>
+</tr>
+{{/Heisig_index}}
+
+{{#Other_meanings}}
+<tr>
+<td>Keyword other meanings</td>
+<td>{{Other_meanings}}</td>
+</tr>
+{{/Other_meanings}}
+
+<td>Tags</td>
+<td>
+    {{#Tags}}
+    {{Tags}}
+    {{/Tags}}
+    {{^Tags}}
+    None
+    {{/Tags}}
+</td>
+</tr>
+
+<tr>
+<td>Note Type</td>
+<td>{{Type}}</td>
+</tr>
+
+<tr >
+<td>Deck</td>
+<td>{{Deck}}</td>
+</tr>
+
+<tr>
+<td>Card</td>
+<td>{{Card}}</td>
+</tr>
 
 </table>
