@@ -49,6 +49,7 @@ th, td {
 
 #tools{
     text-align: center;
+   
 }
 
 
@@ -72,7 +73,7 @@ th, td {
 .image-container {
     overflow:auto;   
     white-space: nowrap;
-    height: 320px;
+    max-height: 320px;
     vertical-align: center;
     text-align: center;
 }
@@ -88,16 +89,14 @@ th, td {
 a{
     color: black;
     text-decoration: none;
+ font-size: 80%;
 }
 
 .link{
     display: inline;
     display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin: 5px; 
-    background-color: #eee;
     padding: 10px;
+    background-color: #eee;
 }
 
 .link:hover{

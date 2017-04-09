@@ -13,13 +13,13 @@
 {{/Note}}
 
 {{#Diagram}}
-<div class="section">Kanji</div>
+<!-- <div class="section">Kanji</div> -->
 <div id="diagram">{{Diagram}}</div>
 {{/Diagram}}
 
 {{^Diagram}}
 <!-- If Diagram isn't present, use a big version of the Expression -->
-<div class="section">Kanji</div>
+<!-- <div class="section">Kanji</div> -->
 <div id="diagram_replace">{{Expression}}</div>
 {{/Diagram}}
 
@@ -33,12 +33,7 @@
 <div class="section-content">{{Kanji_story}}</div>
 {{/Kanji_story}}
 
-{{#Kanji_examples}}
-<div class="section">Examples</div>
-<div class="section-content">{{Kanji_examples}}</div>
-{{/Kanji_examples}}
-
-<div class="section">Tools</div>
+<!-- <div class="section">Tools</div> -->
 <div class="section-content" id="tools">
 <div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
 <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
@@ -48,7 +43,11 @@
 <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
 </div>
 
-</table>
+{{#Kanji_examples}}
+<div class="section">Examples</div>
+<div class="section-content">{{Kanji_examples}}</div>
+{{/Kanji_examples}}
+
 <!-- ===================== Additional Information ===================== -->
 
 <div class="section">Additional Information</div>
