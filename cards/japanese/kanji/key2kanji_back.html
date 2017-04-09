@@ -1,0 +1,94 @@
+<div id="question">
+
+<div id="keyword"> 
+    {{Keyword}} 
+</div>
+
+{{#Keyword_notes}}
+<div id="note"> 
+    ({{Keyword_notes}}) 
+</div>
+{{/Keyword_notes}}
+
+</div>
+
+<!-- ============================= Answer ============================= -->
+
+{{#Note}}
+<div id="note">
+    {{Note}}
+</div>
+{{/Note}}
+
+{{#Diagram}}
+<div id="diagram">
+    {{Diagram}}
+</div>
+{{/Diagram}}
+
+{{^Diagram}}
+<!-- If Diagram isn't present, use a big version of the Expression -->
+<div id="diagram_replace">
+    {{Expression}}
+</div>
+{{/Diagram}}
+
+<!-- ===================== Additional Information ===================== -->
+
+{{#Kanji_image}}
+    {Kanji_image}}
+{{/Kanji_image}}
+
+<!-- *************************** Story & Co *************************** -->
+
+<table style="font-family: Sans">
+<tr>
+<th>Story</th>
+</tr>
+{{#Kanji_story}}
+    <tr><td>{{Kanji_story}}</td></tr>
+{{/Kanji_story}}
+</table>
+<!-- ***************************** Tools ****************************** -->
+<ul class="button-group">
+<li><a class="btn" href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii <span class="arrow">❯</span></a></li>
+<li><a class="btn" href="http://tangorin.com/kanji/{{text:Expression}}">TKanji <span class="arrow">❯</span></a></li>
+<li><a class="btn" href="http://tangorin.com/general/{{text:Expression}}">TGeneral <span class="arrow">❯</span></a></li>
+<li><a class="btn" href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples <span class="arrow">❯</span></a></li>
+<li><a class="btn" href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo <span class="arrow">❯</span></a></li>
+<li><a class="btn" href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></li>
+</ul>
+
+<table class="technical">
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+    <tr class="technical" id="first_technical">
+        <td>Tags</td>
+        <td>
+            {{#Tags}}
+            {{Tags}}
+            {{/Tags}}
+            {{^Tags}}
+            [None]
+            {{/Tags}}
+        </td>
+    </tr>
+
+    <tr class="technical">
+        <td>Note type</td>
+        <td>{{Type}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>Deck</td>
+        <td>{{Deck}}</td>
+    </tr>
+
+    <tr class="technical">
+        <td>Card type</td>
+        <td>{{Card}}</td>
+    </tr>
+
+</table>
