@@ -70,6 +70,11 @@
     font-weight: normal;
 }
 
+#diagram_replace{
+    font-family: MSmincho;
+    font-size: 80px;
+    font-weight: normal;
+}
 
 /*+++++++++++++++++++++++++++++++++ kanji2readings +++++++++++++++++++++++++++++++++*/
 
