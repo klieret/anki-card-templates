@@ -13,7 +13,6 @@ th, td {
 }
 
 .block tr{
-    width=100%;
     background-color: #f2f2f2;
 }
 
@@ -21,31 +20,29 @@ th, td {
     background-color: #f2f2f2;
 }
 
+.details td{
+    white-space: nowrap 
+}
+
+.details td:last-child {
+    width: 100%;
+}
+
 .details tr:nth-child(even){background-color: #ffffff}
 
-th {
+th{
     background-color: #4CAF50;
     color: white;
 }
 
+.block th{
+    text-align: left;
+}
+.details th {
+    text-align: left;   
+}
+
 /*================================ Question/Answer =================================*/
-
-#expression{
-    font-family: MSmincho;
-    font-size: 80px;
-    font-weight: normal;
-}
-
-#question{
-    border-radius: 25px;
-    border: none;
-    border-width: 1px;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-bottom: 5px;
-    margin-top: 5px; 
-    background-color: white;
-}
 
 #keyword{
     text-align: center;
@@ -54,6 +51,10 @@ th {
     font-weight: normal;
 }
 
+
+#diagram{
+    text-align: center;
+}
 
 #note{
     text-align: center;
@@ -69,6 +70,10 @@ th {
     font-weight: normal;
 }
 
+#tools{
+    text-align: center;
+}
+
 
 /*========================= Additional Information ==========================*/
 
@@ -76,12 +81,15 @@ th {
 .image-container {
     overflow:auto;   
     white-space: nowrap;
-    height: 300px;
-    }
+    height: 320px;
+    vertical-align: center;
+    text-align: center;
+    background-color: #f2f2f2;
+}
 
 .image-container img {
-    margin: 0px;
-    max-height: 300px;
+    margin: 10px;
+    max-height:290px;
     max-width:300px;
 }
 
