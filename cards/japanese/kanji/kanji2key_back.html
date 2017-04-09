@@ -1,29 +1,23 @@
 <!-- ============================ Question ============================ -->
 
-{{#Keyword}}
-<div id="keyword">{{Keyword}}</div>
-{{/Keyword}}
-
-{{#Keyword_notes}}
-<div id="note"> ({{Keyword_notes}}) </div>
-{{/Keyword_notes}}
-
+{{#Expression}}          
+<div id="expression"> {{Expression}} </div>
+{{/Expression}}
+  
 <!-- ============================= Answer ============================= -->
+
             
 {{#Note}}
 <div id="note">{{Note}}</div>
 {{/Note}}
 
-{{#Diagram}}
-<!-- <div class="section">Kanji</div> -->
-<div id="diagram">{{Diagram}}</div>
-{{/Diagram}}
+{{#Keyword}}
+<div id="keyword">{{Keyword}}</div>
+{{/Keyword}}
 
-{{^Diagram}}
-<!-- If Diagram isn't present, use a big version of the Expression -->
-<!-- <div class="section">Kanji</div> -->
-<div id="diagram_replace">{{Expression}}</div>
-{{/Diagram}}
+{{#Keyword_hints}}
+<div id="note">({{Keyword_hints}})</div>
+{{/Keyword_hints}}
 
 <!-- ============================= Mnemonic ============================= -->
 

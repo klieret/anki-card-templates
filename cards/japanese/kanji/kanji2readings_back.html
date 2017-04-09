@@ -1,0 +1,137 @@
+    <!-- ============================ Question ============================ -->
+
+<div id="expression">{{Expression}}<div>
+
+{{#Number_of_readings}}
+<div class="badge number_of_readings">
+    {{Number_of_readings}}x
+</div>
+{{/Number_of_readings}}
+
+{{#Kunyomi}}
+<div class="badge kun">
+    K
+</div>
+{{/Kunyomi}}
+
+{{#Onyomi}}
+<div class="badge on">
+    O
+</div>
+{{/Onyomi}}
+        
+
+    <!-- ============================= Answer ============================= -->
+
+{{#Note}}
+<div id="note">
+    {{Note}}
+</div>
+{{/Note}}
+
+<!-- Different cases depending on what readings are present. -->
+
+<div class="readings">
+    <div class="reading kun">
+        {{Kunyomi}}
+    </div>
+    <div class="reading on">
+        {{Onyomi}}
+    </div>
+</div>
+            
+
+<!-- ===================== Additional Information ===================== -->
+
+<!-- ============================= Mnemonic ============================= -->
+
+{{#Keyword}}
+<tr class="data_fields">
+<td>H</td>
+<td>{{Keyword}}</td>
+</tr>
+{{/Keyword}}
+
+{{Readings_image}}
+<div class="section">Reading Image</div>
+<div class="section-content image-container">{{Readings_image}}</div>
+{{Readings_image}}
+
+<div class="section">Mnemonic</div>
+<div class="section-content">
+
+    {{#Combined_story}}
+    {{Combined_story}}
+    {{/Combined_story}}
+    
+    {{#Onyomi_story}}
+    {{Onyomi_story}}
+    {{/Onyomi_story}}
+
+    {{#Kunyomi_story}}
+    {{Kunyomi_story}}
+    {{/Kunyomi_story}}
+
+</div>
+
+{{#Kanji_examples}}
+<div class="section">Examples</div>
+<div class="section-content">{{Kanji_examples}}</div>
+{{/Kanji_examples}}
+
+<!-- ***************************** Tools ****************************** -->
+
+
+
+<!-- ===================== Additional Information ===================== -->
+
+<div class="section">Additional Information</div>
+<table class="details">
+{{#Heisig_index}}
+<tr>
+<td>Heisig Index</td>
+<td>{{Heisig_index}}</td>
+</tr>
+{{/Heisig_index}}
+
+{{#Audio}}
+<tr class="data_fields">
+<td>A</td>
+<td>{{Audio}}</td>
+</tr>
+{{/Audio}}
+
+{{#Other_meanings}}
+<tr>
+<td>KW other meanings</td>
+<td>{{Other_meanings}}</td>
+</tr>
+{{/Other_meanings}}
+
+<td>Tags</td>
+<td>
+    {{#Tags}}
+    {{Tags}}
+    {{/Tags}}
+    {{^Tags}}
+    None
+    {{/Tags}}
+</td>
+</tr>
+
+<tr>
+<td>Note Type</td>
+<td>{{Type}}</td>
+</tr>
+
+<tr >
+<td>Deck</td>
+<td>{{Deck}}</td>
+</tr>
+
+<tr>
+<td>Card</td>
+<td>{{Card}}</td>
+</tr>
+
+</table>

@@ -33,19 +33,19 @@ th, td {
     text-align: center;
 }
 
-#note{
-    text-align: center;
-    font-size: 20px
-    font-weight: normal
-}
-
-
 #diagram_replace{
     text-align: center;
     font-family: MSmincho;
     font-size: 80px;
     font-weight: normal;
 }
+
+#note{
+    text-align: center;
+    font-size: 20px
+    font-weight: normal
+}
+
 
 #tools{
     text-align: center;
@@ -89,7 +89,7 @@ th, td {
 a{
     color: black;
     text-decoration: none;
- font-size: 80%;
+    font-size: 80%;
 }
 
 .link{
