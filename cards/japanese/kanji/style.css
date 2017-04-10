@@ -1,12 +1,24 @@
-body{
+body {
     font-family: Sans; 
-    margin: 0px;
+    font-size: 15px;
+    vertical-align: top;
+    text-align: left;
+    color: black;
+    background-color: white;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
     background-color: #fff;
+}
+
+.readings td{
+    width: 50%
+}
+
+td.kunyomi{
+    text-align: right;
 }
 
 th, td {
@@ -54,6 +66,7 @@ th, td {
 
 
 .section{
+    color: black;
     margin-top: 10px;
     padding-left: 10px;
     text-transform: uppercase;
@@ -105,4 +118,77 @@ a{
 
 .link:active{
 }
+
+
+.badges{
+    text-align: center;
+}
+
+.badge{
+    display: inline;
+    display: inline-block;
+    padding: 10px;
+}
+
+.badge.number_of_readings{
+    background-color: red;
+}
+
+.badge.onyomi{
+    background-color: #7FDBFF;
+}
+
+.badge.kunyomi{
+    background-color: #01FF70;
+}
+
+.japanese{
+    font-family: MSmincho;
+}
+
+#expression{
+    text-align: center;
+    font-size: 80px;
+}
+
+.readings{
+    text-align: center;
+}
+
+.reading{
+    font-size: 50px;
+    display: inline-block;
+}
+
+.reading.onyomi{
+    color: #7FDBFF;
+}
+
+.reading.kunyomi{
+    color: #01FF70;
+}
+
+.story{
+    color: black;
+    padding-left: 5px;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+
+
+
+.story.onyomi{
+    border-color: #7FDBFF;
+}
+
+.story.kunyomi{
+    border-color: #01FF70;
+}
+
+.story.combined{
+    border-color: #F012BE;
+}
+
 

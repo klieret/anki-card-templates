@@ -8,7 +8,7 @@ fields = {
     "Kunyomi_story":u"Story to remember the kun reading. Sed nec scelerisque enim, sed luctus orci. Aliquam erat volutpat. Nulla ac viverra odio, nec aliquet ligula. Vivamus porttitor nisi in neque elementum facilisis. Proin maximus venenatis dolor, non dictum augue varius ac. Mauris eu dolor quis augue dapibus consequat. Morbi facilisis tor",
     "Combined_story":u"Story for both on and kun reading. Sed nec scelerisque enim, sed luctus orci.",
     "Kanji_image":u'<img src="1.jpg"><img src="2.png">',
-    "Readings_image":u"",
+    "Readings_image":u'<img src="1.jpg">',
     "Note":u"Some note here.",
     "Keyword_notes":u"Do not confuse with blargh!!",
     "Other_meanings":u"some otherOther meanings",

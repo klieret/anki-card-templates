@@ -1,25 +1,20 @@
-    <!-- ============================ Question ============================ -->
+<!-- ============================ Question ============================ -->
 
-<div id="expression">{{Expression}}<div>
+<div class="japanese" id="expression">{{Expression}}</div>
 
-{{#Number_of_readings}}
-<div class="badge number_of_readings">
-    {{Number_of_readings}}x
-</div>
-{{/Number_of_readings}}
+<div class="badges">
+    {{#Number_of_readings}}
+    <div class="badge number_of_readings">{{Number_of_readings}}x</div>
+    {{/Number_of_readings}}
 
-{{#Kunyomi}}
-<div class="badge kun">
-    K
-</div>
-{{/Kunyomi}}
+    {{#Kunyomi}}
+    <div class="badge kunyomi">Kunyomi</div>
+    {{/Kunyomi}}
 
-{{#Onyomi}}
-<div class="badge on">
-    O
-</div>
-{{/Onyomi}}
-        
+    {{#Onyomi}}
+    <div class="badge onyomi">Oyomi</div>
+    {{/Onyomi}}
+</div> 
 
     <!-- ============================= Answer ============================= -->
 
@@ -29,15 +24,35 @@
 </div>
 {{/Note}}
 
-<!-- Different cases depending on what readings are present. -->
 
 <div class="readings">
-    <div class="reading kun">
-        {{Kunyomi}}
-    </div>
-    <div class="reading on">
-        {{Onyomi}}
-    </div>
+    {{#Kunyomi}}
+    {{^Onyomi}}
+        <div class="japanese reading kunyomi">{{Kunyomi}}</div>
+    {{/Onyomi}}
+    {{/Kunyomi}}
+    
+    {{#Onyomi}}
+    {{^Kunyomi}}
+    <div class="japanese reading onyomi">{{Onyomi}}</div>
+    {{/Kunyomi}}
+    {{/Onyomi}}
+    
+    {{#Onyomi}}
+    {{#Kunyomi}}
+    <table>
+    <tr>
+        <td class="kunyomi">
+            <div class="japanese reading kunyomi">{{Kunyomi}}</div>
+        </td>
+        <td class="onyomi">
+            <div class="japanese reading onyomi">{{Onyomi}}</div>
+        </td>
+    <tr>
+    <table>
+    {{/Kunyomi}}
+    {{/Onyomi}}
+    
 </div>
             
 
@@ -52,24 +67,24 @@
 </tr>
 {{/Keyword}}
 
-{{Readings_image}}
+{{#Readings_image}}
 <div class="section">Reading Image</div>
 <div class="section-content image-container">{{Readings_image}}</div>
-{{Readings_image}}
+{{/Readings_image}}
 
 <div class="section">Mnemonic</div>
 <div class="section-content">
 
     {{#Combined_story}}
-    {{Combined_story}}
+    <div class="story combined">{{Combined_story}}</div>
     {{/Combined_story}}
     
     {{#Onyomi_story}}
-    {{Onyomi_story}}
+    <div class="story onyomi">{{Onyomi_story}}</div>
     {{/Onyomi_story}}
 
     {{#Kunyomi_story}}
-    {{Kunyomi_story}}
+    <div class="story kunyomi">{{Kunyomi_story}}</div>
     {{/Kunyomi_story}}
 
 </div>
@@ -81,57 +96,65 @@
 
 <!-- ***************************** Tools ****************************** -->
 
-
+<!-- <div class="section">Tools</div> -->
+<div class="section-content" id="tools">
+<div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
+<div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+<div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+<div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div>
+<div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
+<div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
+</div>
 
 <!-- ===================== Additional Information ===================== -->
 
 <div class="section">Additional Information</div>
 <table class="details">
-{{#Heisig_index}}
-<tr>
-<td>Heisig Index</td>
-<td>{{Heisig_index}}</td>
-</tr>
-{{/Heisig_index}}
+    {{#Heisig_index}}
+    <tr>
+        <td>Heisig Index</td>
+        <td>{{Heisig_index}}</td>
+    </tr>
+    {{/Heisig_index}}
 
-{{#Audio}}
-<tr class="data_fields">
-<td>A</td>
-<td>{{Audio}}</td>
-</tr>
-{{/Audio}}
+    {{#Audio}}
+    <tr>
+        <td>A</td>
+        <td>{{Audio}}</td>
+    </tr>
+    {{/Audio}}
 
-{{#Other_meanings}}
-<tr>
-<td>KW other meanings</td>
-<td>{{Other_meanings}}</td>
-</tr>
-{{/Other_meanings}}
+    {{#Other_meanings}}
+    <tr>
+        <td>KW other meanings</td>
+        <td>{{Other_meanings}}</td>
+    </tr>
+    {{/Other_meanings}}
 
-<td>Tags</td>
-<td>
-    {{#Tags}}
-    {{Tags}}
-    {{/Tags}}
-    {{^Tags}}
-    None
-    {{/Tags}}
-</td>
-</tr>
+    <tr>
+        <td>Tags</td>
+        <td>
+            {{#Tags}}
+            {{Tags}}
+            {{/Tags}}
+            {{^Tags}}
+            None
+            {{/Tags}}
+        </td>
+    </tr>
 
-<tr>
-<td>Note Type</td>
-<td>{{Type}}</td>
-</tr>
+    <tr>
+        <td>Note Type</td>
+        <td>{{Type}}</td>
+    </tr>
 
-<tr >
-<td>Deck</td>
-<td>{{Deck}}</td>
-</tr>
+    <tr >
+        <td>Deck</td>
+        <td>{{Deck}}</td>
+    </tr>
 
-<tr>
-<td>Card</td>
-<td>{{Card}}</td>
-</tr>
-
+    <tr>
+        <td>Card</td>
+        <td>{{Card}}</td>
+    </tr>
 </table>
