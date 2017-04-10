@@ -2,7 +2,7 @@
 
 <div class="japanese" id="expression">{{Expression}}</div>
 
-<div class="badges">
+<div class="badge-container">
     {{#Number_of_readings}}
     <div class="badge number_of_readings">{{Number_of_readings}}x</div>
     {{/Number_of_readings}}
@@ -25,47 +25,23 @@
 {{/Note}}
 
 
-<div class="readings">
-    {{#Kunyomi}}
-    {{^Onyomi}}
-        <div class="japanese reading kunyomi">{{Kunyomi}}</div>
-    {{/Onyomi}}
-    {{/Kunyomi}}
-    
-    {{#Onyomi}}
-    {{^Kunyomi}}
+<div class="reading-container">
+    <div class="japanese reading kunyomi">{{Kunyomi}}</div>
+    {{#Kunyomi}}{{#Onyomi}}
+        <div class="japanese reading kunyomi">、</div>
+    {{/Kunyomi}}{{/Onyomi}}
     <div class="japanese reading onyomi">{{Onyomi}}</div>
-    {{/Kunyomi}}
-    {{/Onyomi}}
-    
-    {{#Onyomi}}
-    {{#Kunyomi}}
-    <table>
-    <tr>
-        <td class="kunyomi">
-            <div class="japanese reading kunyomi">{{Kunyomi}}</div>
-        </td>
-        <td class="onyomi">
-            <div class="japanese reading onyomi">{{Onyomi}}</div>
-        </td>
-    <tr>
-    <table>
-    {{/Kunyomi}}
-    {{/Onyomi}}
-    
 </div>
             
+{{#Keyword}}
+<div class="japanese keyword" id="keyword-readings">[{{Keyword}}]</div>
+{{/Keyword}}
 
 <!-- ===================== Additional Information ===================== -->
 
 <!-- ============================= Mnemonic ============================= -->
 
-{{#Keyword}}
-<tr class="data_fields">
-<td>H</td>
-<td>{{Keyword}}</td>
-</tr>
-{{/Keyword}}
+
 
 {{#Readings_image}}
 <div class="section">Reading Image</div>
@@ -73,7 +49,7 @@
 {{/Readings_image}}
 
 <div class="section">Mnemonic</div>
-<div class="section-content">
+<div class="section-content readings-story">
 
     {{#Combined_story}}
     <div class="story combined">{{Combined_story}}</div>
@@ -98,12 +74,12 @@
 
 <!-- <div class="section">Tools</div> -->
 <div class="section-content" id="tools">
-<div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
-<div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
-<div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
-<div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div>
-<div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
-<div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
+    <div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
+    <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+    <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+    <div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div>
+    <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
+    <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
 </div>
 
 <!-- ===================== Additional Information ===================== -->
@@ -119,7 +95,7 @@
 
     {{#Audio}}
     <tr>
-        <td>A</td>
+        <td>Audio</td>
         <td>{{Audio}}</td>
     </tr>
     {{/Audio}}
