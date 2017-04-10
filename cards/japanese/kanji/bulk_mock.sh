@@ -21,6 +21,6 @@ for field_file in ${mock_field_folder}/*.py; do
         template_basename=$(basename ${template})
         echo $template_basename
         field_basename=$(basename ${field_file})
-        python3 "card_tester.py" --style "${template_folder}/style.css" --output "${output_path}/${field_basename}_${template_basename}" "${template}" "${field_file}"
+        python3 "template-tester.py" --style "${template_folder}/style.css" --output "${output_path}/${field_basename}_${template_basename}" "${template}" "${field_file}"
     done
 done
