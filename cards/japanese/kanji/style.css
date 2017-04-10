@@ -1,232 +1,216 @@
-/*============================= General Styling =============================*/
-
-.card {
-    font-family: Arial; 
-    font-size: 20px;
+body {
+    font-family: Sans; 
+    font-size: 15px;
     vertical-align: top;
     text-align: left;
     color: black;
     background-color: white;
 }
 
-.linux { font-family: "Aozora Mincho Medium"; font-weight: normal}
-.mobile { font-family: "myfont"; }
-@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
-@font-face { font-family: "Aozora Mincho Medium"; src: url('_AOZORA.TTF'); }
-
-/*=============================== Main Frame ================================*/
-
-#main_frame {
-    border: solid;
-    border-width: 2px;
+table {
     border-collapse: collapse;
     width: 100%;
-    border-color:#000000;
+    background-color: #fff;
 }
 
-#main_frame td, #main_frame tr{
-    border: solid;
-    border-width: 1px;
-    border-color:#000000;
+.readings td{
+    width: 50%
 }
 
+td.kunyomi{
+    text-align: right;
+}
+
+th, td {
+    text-align: left;
+    padding: 4px;
+}
+
+.details tr:nth-child(even){background-color: #eee}
 
 /*================================ Question/Answer =================================*/
 
-#expression{
-    font-family: MSmincho;
-    font-size: 80px;
-    font-weight: normal;
+.keyword{
+    text-transform: capitalize;
 }
 
-#question{
-    font-weight: normal;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 
 #keyword{
-    font-family: MSmincho;
+    text-align: center;
     font-size: 40px;
+}
+
+
+#diagram{
+    margin-top: -15px;
+    margin-bottom: -30px;
+    text-align: center;
+}
+
+#diagram_replace{
+    text-align: center;
+    font-family: MSmincho;
+    font-size: 80px;
     font-weight: normal;
 }
 
 #note{
+    text-align: center;
     font-size: 20px
     font-weight: normal
 }
 
-/*Answer*/
-#an{
-}
 
-#an th{
-    border-style: solid none solid; 
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    border-color:#000000#000000;
+#tools{
     text-align: center;
+   
+}
+
+
+.section{
+    color: black;
+    margin-top: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
     font-weight: normal;
+    border-bottom: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: black;
 }
 
-#diagram_replace{
-    font-family: MSmincho;
-    font-size: 80px;
-    font-weight: normal;
+.section-content{
+    margin-top: 10px;
 }
 
-/*+++++++++++++++++++++++++++++++++ kanji2readings +++++++++++++++++++++++++++++++++*/
-
-/*--------------------------------- BADGES ---------------------------------*/
-
-.badge{
-    font-family: MSmincho; 
-    font-size: 20px; 
-    border-radius: 0px;
-    border: solid;
-    border-width: 1px;
-    margin: 0px;
-    white-space: nowrap;
-    display: inline;
-    display: inline-block;
-    margin-bottom: 10px;
-    padding-left: 17px;
-    padding-right: 17px;
+.section-content.readings-story{
+    margin-top: 5px;
 }
-
-.badge.kun{
-    background-color: #01FF70;
-}
-
-.badge.on{
-    background-color: #7FDBFF;
-}
-
-.badge.number_of_readings{
-    background-color: #F012BE;
-}
-
-#reading_table{
-    border: none;
-    width: 100%;
-}
-
-#reading_table td{
-    border: none;
-    width:50%;
-    text-align: center;
-}
-
-/*+++++++++++++++++++++++++++++++++ formatting readings +++++++++++++++++++++++++++++++++*/
-
-#reading_table td:first-child{
-    border-right: solid;
-    border-right-width: 1px;
-    text-align: right;
-    border-color:black;
-}
-
-#reading_table td:last-child{
-    text-align: left;
-}
-
-.reading{
-    font-family: MSMincho; 
-    font-size: 40px; 
-    text-align: left; 
-    font-weight: normal;
-    margin: 5px;
-    display: inline-block;
-}
-
-.reading.kun{}
-.reading.on{}
 
 /*========================= Additional Information ==========================*/
 
-#image{
-    text-align: left;
-    /*padding-right: 20px;/*  /* compensate for td on the left to make it look 
-                             centered wrt the main frame */
-}
 
-
-#image img {
-    height: auto;
-    width: 300px;
-    max-height: 500px;
-    margin: 3px;
-}
-
-/*+++++++++++++++++++++++++++++++++ Story & Co ++++++++++++++++++++++++++*/
-
-/* 
-   Format first/all other columns separetely:
-   see http://stackoverflow.com/questions/15675097/style-the-first-td-column-of-a-table-differently
-*/
-
-td{
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    vertical-align: top;
+.image-container {
+    overflow:auto;   
+    white-space: nowrap;
+    max-height: 320px;
+    vertical-align: center;
     text-align: center;
 }
 
-td + td {
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: left;
+.image-container img {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height:290px;
+    max-width:300px;
 }
 
-/*+++++++++++++++++++++++++++++++++ Links ++++++++++++++++++++++++++*/
 
 a{
     color: black;
     text-decoration: none;
+    font-size: 80%;
 }
 
 .link{
-    border-radius: 25px;
-    border: solid;
-    border-width: 1px;
-    white-space: nowrap;
     display: inline;
     display: inline-block;
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-bottom: 5px;
-    margin-top: 5px; 
-    background-color: white;
+    padding: 10px;
+    background-color: #eee;
 }
 
 .link:hover{
     font-weight: bold;
-    background-color: white;
 }
 
 .link:active{
-    background-color: white;
 }
 
-#tools td{
-    vertical-align: center;
-    border-top-width: 2px;
-    border-color:#000000
+
+.badge-container{
+    text-align: center;
 }
 
-/*+++++++++++++++++++++++++++++++++ Technical Information ++++++++++++++++++++++++++*/
-
-.technical{
-    font-family: Courier; 
-    font-size: 15px;
+.badge{
+    display: inline;
+    display: inline-block;
+    padding: 10px;
 }
 
-#first_technical td{
-    /*make border between technical fields and normal data fields thick*/
-    border-top-width: 2px;
-    border-color:#000000;
+.badge.number_of_readings{
+    background-color: red;
 }
+
+.badge.onyomi{
+    background-color: #7FDBFF;
+}
+
+.badge.kunyomi{
+    background-color: #01FF70;
+}
+
+.japanese{
+    font-family: MSmincho;
+}
+
+#expression{
+    text-align: center;
+    font-size: 80px;
+}
+
+.reading-container{
+    text-align: center;
+}
+
+.reading{
+    font-size: 50px;
+    display: inline-block;
+}
+
+.reading.onyomi{
+    color: #7FDBFF;
+}
+
+.reading.kunyomi{
+    color: #01FF70;
+}
+
+#keyword-readings{
+    font-size: 50px;
+    text-align: center;
+}
+
+.story{
+    color: black;
+    padding-left: 5px;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: dashed;
+    border-top-width: 1px;
+    padding-top: 3px;
+    padding-bottom: 3px
+}
+
+.story:first-child{
+    border-top-width: 0px;
+}
+
+
+.story.onyomi{
+    border-left-color: #7FDBFF;
+    border-right-color: #7FDBFF;
+}
+
+.story.kunyomi{
+    border-left-color: #01FF70;
+    border-right-color: #01FF70;
+}
+
+.story.combined{
+    border-left-color: #F012BE;
+    border-right-color: #F012BE;
+}
+
+

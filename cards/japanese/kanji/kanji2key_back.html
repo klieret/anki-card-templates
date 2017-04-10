@@ -1,120 +1,97 @@
-<table  id="main_frame">
-    
-    <!-- ============================ Question ============================ -->
+<!-- ============================ Question ============================ -->
 
-    <tr id="question">
-        <th colspan=2 id="question">
-            
-            <div id="expression"> 
-                {{Expression}} 
-            </div>
+{{#Expression}}          
+<div id="expression"> {{Expression}} </div>
+{{/Expression}}
   
-        </th>
-    </tr>
+<!-- ============================= Answer ============================= -->
 
-    <!-- ============================= Answer ============================= -->
-
-    <tr id="an">
-        <th colspan=2>
             
-            {{#Note}}
-            <div id="note">
-                {{Note}}
-            </div>
-            {{/Note}}
+{{#Note}}
+<div id="note">{{Note}}</div>
+{{/Note}}
 
-            <div id="keyword">
-                {{Keyword}}
-            </div>
-            
-            {{#Keyword_hints}}
-            <div id="note">
-                ({{Keyword_hints}})
-            </div>
-            {{/Keyword_hints}}
+{{#Keyword}}
+<div id="keyword">{{Keyword}}</div>
+{{/Keyword}}
 
-        </th>
-    </tr>
+{{#Keyword_hints}}
+<div id="note">({{Keyword_hints}})</div>
+{{/Keyword_hints}}
 
-    <!-- ===================== Additional Information ===================== -->
+<!-- ============================= Mnemonic ============================= -->
 
-    {{#Kanji_image}}
-    <tr class="data_fields">
-        <td>I</td>
-        <td id="image">{{Kanji_image}}</td>
-    {{/Kanji_image}}
 
-    <!-- *************************** Story & Co *************************** -->
+{{#Kanji_image}}
+<div class="section">Mnemonic Image</div>
+<div class="section-content image-container">{{Kanji_image}}</div>
+{{/Kanji_image}}
 
-    {{#Kanji_story}}
-    <tr class="data_fields">
-        <td>S</td>
-        <td>{{Kanji_story}}</td>
-    </tr>
-    {{/Kanji_story}}
+{{#Kanji_story}}
+<div class="section">Mnemonic</div>
+<div class="section-content">{{Kanji_story}}</div>
+{{/Kanji_story}}
 
-    {{#Heisig_index}}
-    <tr class="data_fields">
-        <td>H</td>
-        <td>{{Heisig_index}}</td>
-    </tr>
-    {{/Heisig_index}}
+<!-- ============================= Tools ============================= -->
 
-    {{#Other_Meanings}}
-    <tr class="data_fields">
-        <td>M</td>
-        <td>{{Other_Meanings}}</td>
-    </tr>
-    {{/Other_Meanings}}
-    
-    {{#Kanji_examples}}
-    <tr class="data_fields">
-        <td>E</td>
-        <td>{{Kanji_examples}}</td>
-    </tr>
-    {{/Kanji_examples}}
 
-    <!-- ***************************** Tools ****************************** -->
+<!-- <div class="section">Tools</div> -->
+<div class="section-content" id="tools">
+<div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
+<div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
+<div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
+<div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div>
+<div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
+<div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
+</div>
 
-    <tr id="tools">
-        <td>T</td>
-        <td>
-            <div class="link"><a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a></div>
-            <div class="link"><a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a></div>
-            <div class="link"><a href="http://tangorin.com/general/{{text:Expression}}">TGeneral</a></div>
-            <div class="link"><a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TExamples</a></div>
-            <div class="link"><a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">HKLeo</a></div>
-            <div class="link"><a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">HKGImgs</a></div>
-        </td>
-    </tr>
+{{#Kanji_examples}}
+<div class="section">Examples</div>
+<div class="section-content">{{Kanji_examples}}</div>
+{{/Kanji_examples}}
 
-    <!-- ********************* Technical Information ********************** -->
+<!-- ===================== Additional Information ===================== -->
 
-    <tr class="technical" id="first_technical">
-        <td>T</td>
-        <td>
-            {{#Tags}}
-            {{Tags}}
-            {{/Tags}}
-            {{^Tags}}
-            [None]
-            {{/Tags}}
-        </td>
-    </tr>
+<div class="section">Additional Information</div>
+<table class="details">
+{{#Heisig_index}}
+<tr>
+<td>Heisig Index</td>
+<td>{{Heisig_index}}</td>
+</tr>
+{{/Heisig_index}}
 
-    <tr class="technical">
-        <td>Y</td>
-        <td>{{Type}}</td>
-    </tr>
+{{#Other_meanings}}
+<tr>
+<td>KW other meanings</td>
+<td>{{Other_meanings}}</td>
+</tr>
+{{/Other_meanings}}
 
-    <tr class="technical">
-        <td>D</td>
-        <td>{{Deck}}</td>
-    </tr>
+<td>Tags</td>
+<td>
+    {{#Tags}}
+    {{Tags}}
+    {{/Tags}}
+    {{^Tags}}
+    None
+    {{/Tags}}
+</td>
+</tr>
 
-    <tr class="technical">
-        <td>C</td>
-        <td>{{Card}}</td>
-    </tr>
+<tr>
+<td>Note Type</td>
+<td>{{Type}}</td>
+</tr>
+
+<tr >
+<td>Deck</td>
+<td>{{Deck}}</td>
+</tr>
+
+<tr>
+<td>Card</td>
+<td>{{Card}}</td>
+</tr>
 
 </table>
