@@ -106,24 +106,19 @@ th, td {
 }
 
 
-a{
+#tools > a{
+    padding: 10px;
+    background-color: #eee;
     color: black;
     text-decoration: none;
     font-size: 80%;
 }
 
-.link{
-    display: inline;
-    display: inline-block;
-    padding: 10px;
-    background-color: #eee;
-}
-
-.link:hover{
+#tools > a:hover{
     font-weight: bold;
 }
 
-.link:active{
+#tools > a:active{
 }
 
 
