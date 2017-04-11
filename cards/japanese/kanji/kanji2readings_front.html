@@ -1,112 +1,17 @@
-<! -- 
-we want only want to create kanji2readings cards if we actually added readings
-i.e. onyomi or kunyomi to the note. If not, this template should yield an empty
-front page, which will cause anki to not generate the card at all.
-See https://apps.ankiweb.net/docs/manual.html#conditional-replacement
-Since there will be bugs if we use field existence switches regarding the same field
-inside of each other, and since there is no OR option, we need to have 3 cases:
-* Onyomi but no Kunyomi
-* Kunyomi but no Onyomi
-* Oyomi and Kunyomi 
-Note that you might have to call Tools ... Empty cards to delete cards that have become
-empty.
--->
+<!-- ============================ Question ============================ -->
 
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@ Onyomi but no Kunyomi @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+<div class="japanese" id="expression">{{Expression}}</div>
 
-{{#Onyomi}}
-{{^Kunyomi}}
-<table  id="main_frame">
-    
-    <!-- ============================ Question ============================ -->
+<div class="badge-container">
+    {{#Number_of_readings}}
+    <div class="badge number_of_readings">{{Number_of_readings}}x</div>
+    {{/Number_of_readings}}
 
-    <tr  id="question">
-        <th colspan=2>
-            
-            <div id="expression"> 
-                {{Expression}} 
-            </div>
-            
-            {{#Number_of_readings}}
-            <div class="badge number_of_readings">
-                {{Number_of_readings}}x
-            </div>
-            {{/Number_of_readings}}
+    {{#Kunyomi}}
+    <div class="badge kunyomi">Kunyomi</div>
+    {{/Kunyomi}}
 
-            <div class="badge on">
-                O
-            </div>
-        
-        </th>
-    </tr>
-
-</table>
-{{/Kunyomi}}
-{{/Onyomi}}
-
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@ Kunyomi but no Onyomi @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-
-{{#Kunyomi}}
-{{^Onyomi}}
-<table  id="main_frame">
-    
-    <!-- ============================ Question ============================ -->
-
-    <tr  id="question">
-        <th colspan=2>
-            
-            <div id="expression"> 
-                {{Expression}} 
-            </div>
-            
-            {{#Number_of_readings}}
-            <div class="badge number_of_readings">
-                {{Number_of_readings}}x
-            </div>
-            {{/Number_of_readings}}
-
-            <div class="badge kun">
-                K
-            </div>
-        </th>
-    </tr>
-
-</table>
-{{/Onyomi}}
-{{/Kunyomi}}
-
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@ Onyomi and Kunyomi @@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-
-{{#Onyomi}}
-{{#Kunyomi}}
-<table  id="main_frame">
-    
-    <!-- ============================ Question ============================ -->
-
-    <tr  id="question">
-        <th colspan=2>
-            
-            <div id="expression"> 
-                {{Expression}} 
-            </div>
-            
-            {{#Number_of_readings}}
-            <div class="badge number_of_readings">
-                {{Number_of_readings}}x
-            </div>
-            {{/Number_of_readings}}
-
-            <div class="badge kun">
-                K
-            </div>
-
-            <div class="badge on">
-                O
-            </div>
-        
-        </th>
-    </tr>
-
-</table>
-{{/Kunyomi}}
-{{/Onyomi}}
+    {{#Onyomi}}
+    <div class="badge onyomi">Oyomi</div>
+    {{/Onyomi}}
+</div> 
