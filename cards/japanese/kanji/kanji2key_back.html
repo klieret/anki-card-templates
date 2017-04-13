@@ -3,9 +3,15 @@
 {{#Expression}}          
     <div id="expression"> {{Expression}} </div>
 {{/Expression}}
+
+<script>
+var test = "{{Tags}}";
+if( test.indexOf('leech') >= 0){
+  document.getElementById("expression").style.color = "red";
+}
+</script>
   
 <!-- ============================= Answer ============================= -->
-
             
 {{#Note}}
     <div id="note">{{Note}}</div>

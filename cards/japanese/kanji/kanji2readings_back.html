@@ -2,6 +2,13 @@
 
 <div class="japanese" id="expression">{{Expression}}</div>
 
+<script>
+var test = "{{Tags}}";
+if( test.indexOf('leech') >= 0){
+  document.getElementById("expression").style.color = "red";
+}
+</script>
+
 <!--<div class="badge-container">
     {{#Number_of_readings}}
     <div class="badge number_of_readings">{{Number_of_readings}}x</div>

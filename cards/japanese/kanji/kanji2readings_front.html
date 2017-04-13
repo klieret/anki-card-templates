@@ -61,3 +61,10 @@ empty.
 </div> 
 {{/Kunyomi}}
 {{/Onyomi}}
+
+<script>
+var test = "{{Tags}}";
+if( test.indexOf('leech') >= 0){
+  document.getElementById("expression").style.color = "red";
+}
+</script>

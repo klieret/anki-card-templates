@@ -4,6 +4,13 @@
     <div id="keyword">{{Keyword}}</div>
 {{/Keyword}}
 
+<script>
+var test = "{{Tags}}";
+if( test.indexOf('leech') >= 0){
+  document.getElementById("keyword").style.color = "red";
+}
+</script>
+
 {{#Keyword_notes}}
     <div id="note"> ({{Keyword_notes}}) </div>
 {{/Keyword_notes}}
