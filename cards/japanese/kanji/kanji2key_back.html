@@ -1,97 +1,106 @@
 <!-- ============================ Question ============================ -->
 
 {{#Expression}}          
-<div id="expression"> {{Expression}} </div>
+    <div id="expression"> {{Expression}} </div>
 {{/Expression}}
   
 <!-- ============================= Answer ============================= -->
 
             
 {{#Note}}
-<div id="note">{{Note}}</div>
+    <div id="note">{{Note}}</div>
 {{/Note}}
 
 {{#Keyword}}
-<div id="keyword">{{Keyword}}</div>
+    <div id="keyword">{{Keyword}}</div>
 {{/Keyword}}
 
 {{#Keyword_hints}}
-<div id="note">({{Keyword_hints}})</div>
+    <div id="note">({{Keyword_notes}})</div>
 {{/Keyword_hints}}
 
 <!-- ============================= Mnemonic ============================= -->
 
 
 {{#Kanji_image}}
-<div class="section">Mnemonic Image</div>
-<div class="section-content image-container">{{Kanji_image}}</div>
+    <div class="section">
+        <div class="section-title">Mnemonic Image</div>
+        <div class="section-content image-container">{{Kanji_image}}</div>
+    </div>
 {{/Kanji_image}}
 
 {{#Kanji_story}}
-<div class="section">Mnemonic</div>
-<div class="section-content">{{Kanji_story}}</div>
+    <div class="section">
+        <div class="section-title">Mnemonic</div>
+        <div class="section-content">{{Kanji_story}}</div>
+    </div>
 {{/Kanji_story}}
 
 <!-- ============================= Tools ============================= -->
 
-
-<!-- <div class="section">Tools</div> -->
-<div class="section-content" id="tools">
-<a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a>
-<a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a>
-<a href="http://tangorin.com/general/{{text:Expression}}">T</a>
-<a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TEx</a>
-<a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">KWLeo</a>
-<a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">KWGImgs</a>
-</div></div>
+<div class="section">
+    <!-- <div class="section-title">Tools</div> -->
+    <div class="section-content" id="tools">
+        <a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a>
+        <a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a>
+        <a href="http://tangorin.com/general/{{text:Expression}}">T</a>
+        <a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TEx</a>
+        <a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">KWLeo</a>
+        <a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">KWGImgs</a>
+    </div>
+</div>
 
 {{#Kanji_examples}}
-<div class="section">Examples</div>
-<div class="section-content">{{Kanji_examples}}</div>
+<div class="section">
+    <div class="section-title">Examples</div>
+    <div class="section-content">{{Kanji_examples}}</div>
+</div>
 {{/Kanji_examples}}
 
 <!-- ===================== Additional Information ===================== -->
 
-<div class="section">Additional Information</div>
+<div class="section-title">Additional Information</div>
 <table class="details">
+
 {{#Heisig_index}}
 <tr>
-<td>Heisig Index</td>
-<td>{{Heisig_index}}</td>
+    <td>Heisig Index</td>
+    <td>{{Heisig_index}}</td>
 </tr>
 {{/Heisig_index}}
 
 {{#Other_meanings}}
 <tr>
-<td>KW other meanings</td>
-<td>{{Other_meanings}}</td>
+    <td>KW other meanings</td>
+    <td>{{Other_meanings}}</td>
 </tr>
 {{/Other_meanings}}
 
-<td>Tags</td>
-<td>
+<tr>
+    <td>Tags</td>
+    <td>
     {{#Tags}}
     {{Tags}}
     {{/Tags}}
     {{^Tags}}
     None
     {{/Tags}}
-</td>
+    </td>
 </tr>
 
 <tr>
-<td>Note Type</td>
-<td>{{Type}}</td>
+    <td>Note Type</td>
+    <td>{{Type}}</td>
 </tr>
 
 <tr >
-<td>Deck</td>
-<td>{{Deck}}</td>
+    <td>Deck</td>
+    <td>{{Deck}}</td>
 </tr>
 
 <tr>
-<td>Card</td>
-<td>{{Card}}</td>
+    <td>Card</td>
+    <td>{{Card}}</td>
 </tr>
 
 </table>

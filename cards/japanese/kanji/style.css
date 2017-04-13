@@ -10,15 +10,6 @@ body {
 table {
     border-collapse: collapse;
     width: 100%;
-    background-color: #fff;
-}
-
-.readings td{
-    width: 50%
-}
-
-td.kunyomi{
-    text-align: right;
 }
 
 th, td {
@@ -33,7 +24,6 @@ th, td {
 .keyword{
     text-transform: capitalize;
 }
-
 
 
 #keyword{
@@ -69,11 +59,12 @@ th, td {
 
 
 .section{
-    color: black;
     margin-top: 10px;
+}
+
+.section-title{
     padding-left: 10px;
     text-transform: uppercase;
-    font-weight: normal;
     border-bottom: solid;
     border-bottom-width: 4px;
     border-bottom-color: black;

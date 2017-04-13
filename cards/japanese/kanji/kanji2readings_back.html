@@ -19,96 +19,104 @@
 <!-- ============================= Answer ============================= -->
 
 {{#Note}}
-<div id="note">
-    {{Note}}
-</div>
+    <div id="note">{{Note}}</div>
 {{/Note}}
 
 
 <div class="reading-container">
     <div class="japanese reading kunyomi">{{Kunyomi}}</div>
+
+    <!--- Add a "," in between both kinds of readings, if both are present -->
     {{#Kunyomi}}{{#Onyomi}}
         <div class="japanese reading kunyomi">、</div>
     {{/Onyomi}}{{/Kunyomi}}
+
     <div class="japanese reading onyomi">{{Onyomi}}</div>
 </div>
             
 
-
-<!-- ===================== Additional Information ===================== -->
 
 <!-- ============================= Mnemonic ============================= -->
 
 
 
 {{#Readings_image}}
-<div class="section">Reading Image</div>
-<div class="section-content image-container">{{Readings_image}}</div>
+<div class="section">
+    <div class="section-title">Reading Image</div>
+    <div class="section-content image-container">{{Readings_image}}</div>
+</div>
 {{/Readings_image}}
 
-<div class="section">Mnemonic</div>
-<div class="section-content readings-story">
+<div class="section">
+    <div class="section-title">Mnemonic</div>
+    <div class="section-content readings-story">
 
-    {{#Combined_story}}
-    <div class="story combined">{{Combined_story}}</div>
-    {{/Combined_story}}
-    
-    {{#Onyomi_story}}
-    <div class="story onyomi">{{Onyomi_story}}</div>
-    {{/Onyomi_story}}
+        {{#Combined_story}}
+            <div class="story combined">{{Combined_story}}</div>
+        {{/Combined_story}}
 
-    {{#Kunyomi_story}}
-    <div class="story kunyomi">{{Kunyomi_story}}</div>
-    {{/Kunyomi_story}}
+        {{#Onyomi_story}}
+            <div class="story onyomi">{{Onyomi_story}}</div>
+        {{/Onyomi_story}}
 
+        {{#Kunyomi_story}}
+            <div class="story kunyomi">{{Kunyomi_story}}</div>
+        {{/Kunyomi_story}}
+
+    </div>
 </div>
 
 {{#Kanji_examples}}
-<div class="section">Examples</div>
-<div class="section-content">{{Kanji_examples}}</div>
+    <div class="section">
+        <div class="section-title">Examples</div>
+        <div class="section-content">{{Kanji_examples}}</div>
+    </div>
 {{/Kanji_examples}}
 
 <!-- ***************************** Tools ****************************** -->
 
-<!-- <div class="section">Tools</div> -->
-<div class="section-content" id="tools">
-<a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a>
-<a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a>
-<a href="http://tangorin.com/general/{{text:Expression}}">T</a>
-<a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TEx</a>
-<a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">KWLeo</a>
-<a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">KWGImgs</a>
+<div class="section">
+    <!-- <div class="section-title">Tools</div> -->
+    <div class="section-content" id="tools">
+        <a href="http://kanji.koohii.com/study/kanji/{{text:Expression}}">Koohii</a>
+        <a href="http://tangorin.com/kanji/{{text:Expression}}">TKanji</a>
+        <a href="http://tangorin.com/general/{{text:Expression}}">T</a>
+        <a href="http://tangorin.com/kanji_examples/{{text:Expression}}">TEx</a>
+        <a href="http://dict.leo.org/ende/index_de.html#/search={{text:Keyword}}">KWLeo</a>
+        <a href="http://www.google.de/search?num=10&amp;hl=en&amp;safe=off&amp;site=imghp&amp;tbm=isch&amp;source=hp&amp;biw=1109&amp;bih=585&amp;q={{text:Keyword}}">KWGImgs</a>
+    </div>
 </div>
 
 <!-- ===================== Additional Information ===================== -->
 
-<div class="section">Additional Information</div>
+<div class="section-title">Additional Information</div>
 <table class="details">
    {{#Keyword}}
-   <tr>
-        <td>Keyword</td>
-        <td>[{{Keyword}}]</td>
+       <tr>
+            <td>Keyword</td>
+            <td>[{{Keyword}}]</td>
+       </tr>
    {{/Keyword}}
 
     {{#Heisig_index}}
-    <tr>
-        <td>Heisig Index</td>
-        <td>{{Heisig_index}}</td>
-    </tr>
+        <tr>
+            <td>Heisig Index</td>
+            <td>{{Heisig_index}}</td>
+        </tr>
     {{/Heisig_index}}
 
     {{#Audio}}
-    <tr>
-        <td>Audio</td>
-        <td>{{Audio}}</td>
-    </tr>
+        <tr>
+            <td>Audio</td>
+            <td>{{Audio}}</td>
+        </tr>
     {{/Audio}}
 
     {{#Other_meanings}}
-    <tr>
-        <td>KW other meanings</td>
-        <td>{{Other_meanings}}</td>
-    </tr>
+        <tr>
+            <td>KW other meanings</td>
+            <td>{{Other_meanings}}</td>
+        </tr>
     {{/Other_meanings}}
 
     <tr>
