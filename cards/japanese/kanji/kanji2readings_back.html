@@ -3,25 +3,14 @@
 <div class="japanese" id="expression">{{Expression}}</div>
 
 <script>
-var test = "{{Tags}}";
-if( test.indexOf('leech') >= 0){
-  document.getElementById("expression").style.color = "red";
+var tags = "{{Tags}}";
+if( tags.indexOf('marked') >= 0){
+  document.getElementById("expression").className += " marked"; // note the space!
 }
-</script>
-
-<!--<div class="badge-container">
-    {{#Number_of_readings}}
-    <div class="badge number_of_readings">{{Number_of_readings}}x</div>
-    {{/Number_of_readings}}
-
-    {{#Kunyomi}}
-    <div class="badge kunyomi">Kunyomi</div>
-    {{/Kunyomi}}
-
-    {{#Onyomi}}
-    <div class="badge onyomi">Oyomi</div>
-    {{/Onyomi}}
-</div> -->
+if( tags.indexOf('leech') >= 0){
+  document.getElementById("expression").className += " leech"; // note the space!
+}
+</script></body></html>
 
 <!-- ============================= Answer ============================= -->
 

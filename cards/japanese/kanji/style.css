@@ -144,6 +144,14 @@ th, td {
     font-size: 80px;
 }
 
+.marked{
+    color: purple;
+}
+
+.leech{
+    color: red;
+}
+
 .reading-container{
     text-align: center;
 }

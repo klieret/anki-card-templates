@@ -63,8 +63,11 @@ empty.
 {{/Onyomi}}
 
 <script>
-var test = "{{Tags}}";
-if( test.indexOf('leech') >= 0){
-  document.getElementById("expression").style.color = "red";
+var tags = "{{Tags}}";
+if( tags.indexOf('marked') >= 0){
+  document.getElementById("expression").className += " marked"; // note the space!
 }
-</script>
+if( tags.indexOf('leech') >= 0){
+  document.getElementById("expression").className += " leech"; // note the space!
+}
+</script></body></html>

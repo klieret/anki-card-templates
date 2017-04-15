@@ -6,9 +6,12 @@
 {{/Keyword}}
 
 <script>
-var test = "{{Tags}}";
-if( test.indexOf('leech') >= 0){
-  document.getElementById("keyword").style.color = "red";
+var tags = "{{Tags}}";
+if( tags.indexOf('marked') >= 0){
+  document.getElementById("keyword").className += " marked"; // note the space!
+}
+if( tags.indexOf('leech') >= 0){
+  document.getElementById("keyword").className += " leech"; // note the space!
 }
 </script>
 
