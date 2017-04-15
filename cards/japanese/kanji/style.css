@@ -146,11 +146,11 @@ th, td {
     font-size: 80px;
 }
 
-.marked{
-    color: purple;
+.ismarked{
+    color: red;
 }
 
-.leech{
+.isleech{
     color: red;
 }
 

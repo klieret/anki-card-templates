@@ -1,18 +1,17 @@
 <!-- ============================ Question ============================ -->
 
-
 {{#Keyword}}
 <div id="keyword">{{Keyword}}</div>
 {{/Keyword}}
 
 <script>
-var tags = "{{Tags}}";
-if( tags.indexOf('marked') >= 0){
-  document.getElementById("keyword").className += " marked"; // note the space!
-}
-if( tags.indexOf('leech') >= 0){
-  document.getElementById("keyword").className += " leech"; // note the space!
-}
+    var tags = "{{Tags}}";
+    if( tags.indexOf('marked') >= 0){
+      document.getElementById("keyword").className += " ismarked"; // note the space!
+    }
+    if( tags.indexOf('leech') >= 0){
+      document.getElementById("keyword").className += " isleech"; // note the space!
+    }
 </script>
 
 {{#Keyword_notes}}
