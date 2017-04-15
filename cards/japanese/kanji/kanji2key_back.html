@@ -1,7 +1,7 @@
 <!-- ============================ Question ============================ -->
 
 {{#Expression}}          
-    <div id="expression"> {{Expression}} </div>
+    <div id="expression" class="japanese"> {{Expression}} </div>
 {{/Expression}}
 
 <script>
@@ -21,7 +21,7 @@ if( tags.indexOf('leech') >= 0){
 {{/Note}}
 
 {{#Keyword}}
-    <div id="keyword">{{Keyword}}</div>
+    <div id="keyword" class="japanese">{{Keyword}}</div>
 {{/Keyword}}
 
 {{#Keyword_hints}}
@@ -68,6 +68,7 @@ if( tags.indexOf('leech') >= 0){
 
 <!-- ===================== Additional Information ===================== -->
 
+<div class="section">
 <div class="section-title">Additional Information</div>
 <table class="details">
 
@@ -113,3 +114,4 @@ if( tags.indexOf('leech') >= 0){
 </tr>
 
 </table>
+</div>

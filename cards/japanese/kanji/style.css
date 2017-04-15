@@ -1,3 +1,5 @@
+@font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
+
 body {
     font-family: Sans; 
     font-size: 15px;
@@ -59,7 +61,7 @@ th, td {
 
 
 .section{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .section-title{
