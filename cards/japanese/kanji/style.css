@@ -146,13 +146,14 @@ th, td {
     font-size: 80px;
 }
 
-.ismarked{
-    color: red;
+.ismarked:after{
+    content: "*"
 }
 
 .isleech{
     color: red;
 }
+
 
 .reading-container{
     text-align: center;
@@ -208,5 +209,3 @@ th, td {
     border-left-color: #F012BE;
     border-right-color: #F012BE;
 }
-
-
