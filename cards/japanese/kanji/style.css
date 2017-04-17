@@ -1,3 +1,6 @@
+/*================================ General Styling =================================*/
+
+
 @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
 
 body {
@@ -9,42 +12,8 @@ body {
     background-color: white;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    text-align: left;
-    padding: 4px;
-}
-
-.details tr:nth-child(even){background-color: #e3f2fd}
-
-/*================================ Question/Answer =================================*/
-
-.keyword{
-    text-transform: capitalize;
-}
-
-
-#keyword{
-    text-align: center;
-    font-size: 40px;
-}
-
-
-#diagram{
-    margin-top: -15px;
-    margin-bottom: -30px;
-    text-align: center;
-}
-
-#diagram_replace{
-    text-align: center;
+.japanese{
     font-family: MSmincho;
-    font-size: 80px;
-    font-weight: normal;
 }
 
 #note{
@@ -53,24 +22,27 @@ th, td {
     font-weight: normal
 }
 
-
-#tools{
-    text-align: center;
-   
+.ismarked:after{
+    content: "*"
 }
 
+.isleech{
+    color: red;
+}
+
+/*------------------------- Sections -------------------------*/
 
 .section{
     margin-top: 20px;
 }
 
 .section-title{
+    color: #1976d2;
     padding-left: 10px;
     text-transform: uppercase;
     border-bottom: solid;
     border-bottom-width: 4px;
     border-bottom-color: #1976d2;
-    color: #1976d2;
 }
 
 .section-content{
@@ -80,12 +52,8 @@ th, td {
     padding-right: 5px;
 }
 
-.section-content.kanji-story{
-    background-color: #e3f2fd;
-}
 
-/*========================= Additional Information ==========================*/
-
+/*------------------------- Images -------------------------*/
 
 .image-container {
     overflow:auto;   
@@ -98,8 +66,15 @@ th, td {
 .image-container img {
     margin-left: 10px;
     margin-right: 10px;
-    max-height:290px;
-    max-width:300px;
+    max-height: 290px;
+    max-width: 300px;
+}
+
+
+/*------------------------- Tools -------------------------*/
+
+#tools{
+    text-align: center;
 }
 
 
@@ -120,13 +95,73 @@ th, td {
 }
 
 
+/*------------------------- Additional Information -------------------------*/
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 4px;
+}
+
+.details tr:nth-child(even){
+    background-color: #e3f2fd
+}
+
+/*================================ Kanji2Key and Key2Kanji =================================*/
+
+
+.section-content.kanji-story{
+    background-color: #e3f2fd;
+}
+
+.keyword{
+    text-transform: capitalize;
+}
+
+#expression{
+    text-align: center;
+    font-size: 80px;
+}
+
+#keyword{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#diagram{
+    margin-top: -15px;
+    margin-bottom: -30px;
+    text-align: center;
+}
+
+#diagram_replace{
+    text-align: center;
+    font-family: MSmincho;
+    font-size: 80px;
+    font-weight: normal;
+}
+
+
+/*========================= kanji2readings ==========================*/
+
+#keyword-readings{
+    font-size: 50px;
+    text-align: center;
+}
+
+/*------------------------- Badges -------------------------*/
+
 .badge-container{
     text-align: center;
 }
 
 .badge{
     display: inline;
-    display: inline-block;
     padding: 10px;
 }
 
@@ -142,23 +177,7 @@ th, td {
     background-color: #01FF70;
 }
 
-.japanese{
-    font-family: MSmincho;
-}
-
-#expression{
-    text-align: center;
-    font-size: 80px;
-}
-
-.ismarked:after{
-    content: "*"
-}
-
-.isleech{
-    color: red;
-}
-
+/*------------------------- Readings -------------------------*/
 
 .reading-container{
     text-align: center;
@@ -177,12 +196,9 @@ th, td {
     color: #01FF70;
 }
 
-#keyword-readings{
-    font-size: 50px;
-    text-align: center;
-}
+/*------------------------- Readings Story -------------------------*/
 
-.story{
+.readings-story{
     color: black;
     padding-left: 5px;
     border-left-width: 7px;
@@ -195,22 +211,22 @@ th, td {
     padding-bottom: 3px
 }
 
-.story:first-child{
+.readings-story:first-child{
     border-top-width: 0px;
 }
 
 
-.story.onyomi{
+.readings-story.onyomi{
     border-left-color: #7FDBFF;
     border-right-color: #7FDBFF;
 }
 
-.story.kunyomi{
+.readings-story.kunyomi{
     border-left-color: #01FF70;
     border-right-color: #01FF70;
 }
 
-.story.combined{
+.readings-story.combined{
     border-left-color: #F012BE;
     border-right-color: #F012BE;
 }

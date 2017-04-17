@@ -3,14 +3,14 @@
 <div class="japanese" id="expression">{{Expression}}</div>
 
 <script>
-var tags = "{{Tags}}";
-if( tags.indexOf('marked') >= 0){
-  document.getElementById("expression").className += " ismarked"; // note the space!
-}
-if( tags.indexOf('leech') >= 0){
-  document.getElementById("expression").className += " isleech"; // note the space!
-}
-</script></body></html>
+    var tags = "{{Tags}}";
+    if( tags.indexOf('marked') >= 0){
+      document.getElementById("expression").className += " ismarked"; // note the space!
+    }
+    if( tags.indexOf('leech') >= 0){
+      document.getElementById("expression").className += " isleech"; // note the space!
+    }
+</script>
 
 <!-- ============================= Answer ============================= -->
 
@@ -48,15 +48,15 @@ if( tags.indexOf('leech') >= 0){
     <div class="section-content readings-story">
 
         {{#Combined_story}}
-            <div class="story combined">{{Combined_story}}</div>
+            <div class="readings-story combined">{{Combined_story}}</div>
         {{/Combined_story}}
 
         {{#Onyomi_story}}
-            <div class="story onyomi">{{Onyomi_story}}</div>
+            <div class="readings-story onyomi">{{Onyomi_story}}</div>
         {{/Onyomi_story}}
 
         {{#Kunyomi_story}}
-            <div class="story kunyomi">{{Kunyomi_story}}</div>
+            <div class="readings-story kunyomi">{{Kunyomi_story}}</div>
         {{/Kunyomi_story}}
 
     </div>
@@ -86,61 +86,61 @@ if( tags.indexOf('leech') >= 0){
 <!-- ===================== Additional Information ===================== -->
 
 <div class="section">
-<div class="section-title">Additional Information</div>
-<table class="details">
-   {{#Keyword}}
-       <tr>
-            <td>Keyword</td>
-            <td>[{{Keyword}}]</td>
-       </tr>
-   {{/Keyword}}
+    <div class="section-title">Additional Information</div>
+    <table class="details">
+       {{#Keyword}}
+           <tr>
+                <td>Keyword</td>
+                <td>[{{Keyword}}]</td>
+           </tr>
+       {{/Keyword}}
 
-    {{#Heisig_index}}
+        {{#Heisig_index}}
+            <tr>
+                <td>Heisig Index</td>
+                <td>{{Heisig_index}}</td>
+            </tr>
+        {{/Heisig_index}}
+
+        {{#Audio}}
+            <tr>
+                <td>Audio</td>
+                <td>{{Audio}}</td>
+            </tr>
+        {{/Audio}}
+
+        {{#Other_meanings}}
+            <tr>
+                <td>KW other meanings</td>
+                <td>{{Other_meanings}}</td>
+            </tr>
+        {{/Other_meanings}}
+
         <tr>
-            <td>Heisig Index</td>
-            <td>{{Heisig_index}}</td>
+            <td>Tags</td>
+            <td>
+                {{#Tags}}
+                {{Tags}}
+                {{/Tags}}
+                {{^Tags}}
+                None
+                {{/Tags}}
+            </td>
         </tr>
-    {{/Heisig_index}}
 
-    {{#Audio}}
         <tr>
-            <td>Audio</td>
-            <td>{{Audio}}</td>
+            <td>Note Type</td>
+            <td>{{Type}}</td>
         </tr>
-    {{/Audio}}
 
-    {{#Other_meanings}}
+        <tr >
+            <td>Deck</td>
+            <td>{{Deck}}</td>
+        </tr>
+
         <tr>
-            <td>KW other meanings</td>
-            <td>{{Other_meanings}}</td>
+            <td>Card</td>
+            <td>{{Card}}</td>
         </tr>
-    {{/Other_meanings}}
-
-    <tr>
-        <td>Tags</td>
-        <td>
-            {{#Tags}}
-            {{Tags}}
-            {{/Tags}}
-            {{^Tags}}
-            None
-            {{/Tags}}
-        </td>
-    </tr>
-
-    <tr>
-        <td>Note Type</td>
-        <td>{{Type}}</td>
-    </tr>
-
-    <tr >
-        <td>Deck</td>
-        <td>{{Deck}}</td>
-    </tr>
-
-    <tr>
-        <td>Card</td>
-        <td>{{Card}}</td>
-    </tr>
-</table>
+    </table>
 </div>
