@@ -25,6 +25,13 @@ for field_file in ${mock_field_folder}/*.py; do
         field_basename=$(basename ${field_file})
         field_basename=${field_basename%.*}
         echo "branch" $branch "field" $field_basename "template" $template_basename
-        python3 "template-tester.py" --style "${template_folder}/style.css" --output "${output_path}/${field_basename}_${branch}_${template_basename}.html" "${template}" "${field_file}"
+        python3 "template-tester.py" --style "${template_folder}/style.css" --output "${output_path}/${branch}_${field_basename}_${template_basename}.html" "${template}" "${field_file}"
     done
+done
+
+echo "To include the previews, include the following lines in the readme:"
+
+for file in ${output_path}/*.html; do
+    filename=$(basename ${file})
+    echo "* [${filename}](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/${filename})"
 done
