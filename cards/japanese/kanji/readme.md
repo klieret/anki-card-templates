@@ -32,26 +32,52 @@ Templates for the three card types
 
 ## HTML previews
 
-should be automatically updated:
+The HTML are more or less automatically updated. The table has the following columns:
 
-* [master_leech_kanji2key_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_leech_kanji2key_back.html)
-* [master_leech_kanji2key_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_leech_kanji2key_front.html)
-* [master_leech_kanji2readings_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_leech_kanji2readings_back.html)
-* [master_leech_kanji2readings_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_leech_kanji2readings_front.html)
-* [master_leech_key2kanji_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_leech_key2kanji_back.html)
-* [master_leech_key2kanji_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_leech_key2kanji_front.html)
-* [master_marked_kanji2key_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_marked_kanji2key_back.html)
-* [master_marked_kanji2key_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_marked_kanji2key_front.html)
-* [master_marked_kanji2readings_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_marked_kanji2readings_back.html)
-* [master_marked_kanji2readings_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_marked_kanji2readings_front.html)
-* [master_marked_key2kanji_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_marked_key2kanji_back.html)
-* [master_marked_key2kanji_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_marked_key2kanji_front.html)
-* [master_note_kanji2key_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_note_kanji2key_back.html)
-* [master_note_kanji2key_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_note_kanji2key_front.html)
-* [master_note_kanji2readings_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_note_kanji2readings_back.html)
-* [master_note_kanji2readings_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_note_kanji2readings_front.html)
-* [master_note_key2kanji_back.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_note_key2kanji_back.html)
-* [master_note_key2kanji_front.html](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_note_key2kanji_front.html)
+* *design*: The subfolder in which the templates were
+* *branch*: The git branch (i.e. the development status)
+* *field-file*: There will be a gew different previews generated based on a couple of different notes (i.e. a couple of different fillings for the fields)
+* *template*: Name of the template file
+* *link*: Link to the HTML preview
+
+|design|git-branch|field-file|template|link|
+|---|---|---|---|---|
+|```new_design```|```master```|```leech```|```kanji2key_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_leech_kanji2key_back.html)
+|```new_design```|```master```|```leech```|```kanji2key_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_leech_kanji2key_front.html)
+|```new_design```|```master```|```leech```|```kanji2readings_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_leech_kanji2readings_back.html)
+|```new_design```|```master```|```leech```|```kanji2readings_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_leech_kanji2readings_front.html)
+|```new_design```|```master```|```leech```|```key2kanji_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_leech_key2kanji_back.html)
+|```new_design```|```master```|```leech```|```key2kanji_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_leech_key2kanji_front.html)
+|```new_design```|```master```|```marked```|```kanji2key_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_marked_kanji2key_back.html)
+|```new_design```|```master```|```marked```|```kanji2key_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_marked_kanji2key_front.html)
+|```new_design```|```master```|```marked```|```kanji2readings_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_marked_kanji2readings_back.html)
+|```new_design```|```master```|```marked```|```kanji2readings_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_marked_kanji2readings_front.html)
+|```new_design```|```master```|```marked```|```key2kanji_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_marked_key2kanji_back.html)
+|```new_design```|```master```|```marked```|```key2kanji_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_marked_key2kanji_front.html)
+|```new_design```|```master```|```note```|```kanji2key_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_note_kanji2key_back.html)
+|```new_design```|```master```|```note```|```kanji2key_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_note_kanji2key_front.html)
+|```new_design```|```master```|```note```|```kanji2readings_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_note_kanji2readings_back.html)
+|```new_design```|```master```|```note```|```kanji2readings_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_note_kanji2readings_front.html)
+|```new_design```|```master```|```note```|```key2kanji_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_note_key2kanji_back.html)
+|```new_design```|```master```|```note```|```key2kanji_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_new_design_note_key2kanji_front.html)
+|```legacy_design```|```master```|```leech```|```kanji2key_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_leech_kanji2key_back.html)
+|```legacy_design```|```master```|```leech```|```kanji2key_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_leech_kanji2key_front.html)
+|```legacy_design```|```master```|```leech```|```kanji2readings_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_leech_kanji2readings_back.html)
+|```legacy_design```|```master```|```leech```|```kanji2readings_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_leech_kanji2readings_front.html)
+|```legacy_design```|```master```|```leech```|```key2kanji_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_leech_key2kanji_back.html)
+|```legacy_design```|```master```|```leech```|```key2kanji_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_leech_key2kanji_front.html)
+|```legacy_design```|```master```|```marked```|```kanji2key_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_marked_kanji2key_back.html)
+|```legacy_design```|```master```|```marked```|```kanji2key_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_marked_kanji2key_front.html)
+|```legacy_design```|```master```|```marked```|```kanji2readings_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_marked_kanji2readings_back.html)
+|```legacy_design```|```master```|```marked```|```kanji2readings_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_marked_kanji2readings_front.html)
+|```legacy_design```|```master```|```marked```|```key2kanji_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_marked_key2kanji_back.html)
+|```legacy_design```|```master```|```marked```|```key2kanji_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_marked_key2kanji_front.html)
+|```legacy_design```|```master```|```note```|```kanji2key_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_note_kanji2key_back.html)
+|```legacy_design```|```master```|```note```|```kanji2key_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_note_kanji2key_front.html)
+|```legacy_design```|```master```|```note```|```kanji2readings_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_note_kanji2readings_back.html)
+|```legacy_design```|```master```|```note```|```kanji2readings_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_note_kanji2readings_front.html)
+|```legacy_design```|```master```|```note```|```key2kanji_back```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_note_key2kanji_back.html)
+|```legacy_design```|```master```|```note```|```key2kanji_front```|[html preview](http://htmlpreview.github.com/?https://github.com/klieret/readme-files/blob/master/anki-card-templates/cards/japanese/kanji/html_rendered/master_legacy_design_note_key2kanji_front.html)
 
 ## Screenshots
 
