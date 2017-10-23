@@ -1,5 +1,7 @@
 # Anki Card Templates for learning Japanese
 
+**[Overview over my Anki add-ons](http://www.lieret.net/opensource/#anki)**
+
 ## Introduction
 
 [Anki](https://apps.ankiweb.net/) is a spaced repetition flashcard program.
