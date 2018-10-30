@@ -6,8 +6,9 @@
 set -e  # abort if errors
 echo "Note: this script only works if there are no blank spaces in your paths."
 
+# separate by spaces if specifying multiple paths
 mock_field_folder="mock_fields"
-template_folders="new_design legacy_design"
+template_folders="new_design legacy_design"  
 source_path="$HOME/Documents/git_sync/anki-template-tester"
 output_path="html_rendered"
 
