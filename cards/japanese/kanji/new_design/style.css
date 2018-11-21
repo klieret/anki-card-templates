@@ -4,7 +4,7 @@
 @font-face { font-family: "MSMincho"; src: url('_MSMINCHO.TTF'); }
 
 body {
-    font-family: Sans; 
+    font-family: Mono; 
     font-size: 15px;
     vertical-align: top;
     text-align: left;
@@ -37,12 +37,12 @@ body {
 }
 
 .section-title{
-    color: #1976d2;
+    color: #862d86;
     padding-left: 10px;
     text-transform: uppercase;
     border-bottom: solid;
     border-bottom-width: 4px;
-    border-bottom-color: #1976d2;
+    border-bottom-color: #862d86;
 }
 
 .section-content{
@@ -80,7 +80,7 @@ body {
 
 #tools > a{
     padding: 10px;
-    background-color: #e3f2fd;
+    background-color: #f9ecf9;
     color: black;
     text-decoration: none;
     font-size: 80%;
@@ -108,14 +108,14 @@ th, td {
 }
 
 .details tr:nth-child(even){
-    background-color: #e3f2fd
+    background-color: #f9ecf9
 }
 
 /*================================ Kanji2Key and Key2Kanji =================================*/
 
 
 .section-content.kanji-story{
-    background-color: #e3f2fd;
+    background-color: #f9ecf9;
 }
 
 .keyword{
@@ -174,7 +174,7 @@ th, td {
 }
 
 .badge.kunyomi{
-    background-color: #01FF70;
+    background-color: #862d86;
 }
 
 /*------------------------- Readings -------------------------*/
@@ -193,7 +193,7 @@ th, td {
 }
 
 .reading.kunyomi{
-    color: #01FF70;
+    color: #862d86;
 }
 
 /*------------------------- Readings Story -------------------------*/
@@ -222,8 +222,8 @@ th, td {
 }
 
 .readings-story.kunyomi{
-    border-left-color: #01FF70;
-    border-right-color: #01FF70;
+    border-left-color: #862d86;
+    border-right-color: #862d86;
 }
 
 .readings-story.combined{
