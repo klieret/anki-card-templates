@@ -19,7 +19,7 @@
 {{/Keyword_notes}}
 
 <!-- ============================= Answer ============================= -->
-            
+
 {{#Note}}
     <div id="note">{{Note}}</div>
 {{/Note}}
@@ -79,6 +79,7 @@
 {{/Kanji_examples}}
 
 <!-- ===================== Additional Information ===================== -->
+<!-- Same for kanji2key, kanji2readings, key2kanji -->
 
 <div class="section">
     <div class="section-title">Additional Information</div>
@@ -97,6 +98,13 @@
         <td>{{Other_meanings}}</td>
     </tr>
     {{/Other_meanings}}
+
+    {{#Keyword_notes}}
+    <tr>
+        <td>KW notes</td>
+        <td>{{Keyword_notes}}</td>
+    </tr>
+    {{/Keyword_notes}}
 
     <tr>
         <td>Tags</td>

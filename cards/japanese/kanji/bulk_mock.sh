@@ -5,11 +5,13 @@
 
 set -e  # abort if errors
 echo "Note: this script only works if there are no blank spaces in your paths."
+pwd
 
 # separate by spaces if specifying multiple paths
 mock_field_folder="mock_fields"
-template_folders="new_design legacy_design"  
-source_path="$HOME/Documents/git_sync/anki-template-tester"
+template_folders="new_design legacy_design"
+# todo: anki-template-tester should be installed properly, so we don't need this
+source_path="$HOME/Documents/20/git_sync/anki-template-tester"
 output_path="html_rendered"
 
 mkdir -p "${output_path}"
@@ -20,7 +22,7 @@ echo "|---|---|---|---|---|"
 
 branch=$(git rev-parse --abbrev-ref HEAD)
 
-for template_folder in ${template_folders}; do 
+for template_folder in ${template_folders}; do
     template_folder_basename=$(basename ${template_folder})
     for field_file in ${mock_field_folder}/*.txt; do
         for template in ${template_folder}/*.html; do

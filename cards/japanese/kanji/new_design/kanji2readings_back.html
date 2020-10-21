@@ -29,7 +29,7 @@
 
     <div class="japanese reading onyomi">{{Onyomi}}</div>
 </div>
-            
+
 
 
 <!-- ============================= Mnemonic ============================= -->
@@ -84,63 +84,59 @@
 </div>
 
 <!-- ===================== Additional Information ===================== -->
+<!-- Same for kanji2key, kanji2readings, key2kanji -->
 
 <div class="section">
     <div class="section-title">Additional Information</div>
     <table class="details">
-       {{#Keyword}}
-           <tr>
-                <td>Keyword</td>
-                <td>[{{Keyword}}]</td>
-           </tr>
-       {{/Keyword}}
 
-        {{#Heisig_index}}
-            <tr>
-                <td>Heisig Index</td>
-                <td>{{Heisig_index}}</td>
-            </tr>
-        {{/Heisig_index}}
+    {{#Heisig_index}}
+    <tr>
+        <td>Heisig Index</td>
+        <td>{{Heisig_index}}</td>
+    </tr>
+    {{/Heisig_index}}
 
-        {{#Audio}}
-            <tr>
-                <td>Audio</td>
-                <td>{{Audio}}</td>
-            </tr>
-        {{/Audio}}
+    {{#Other_meanings}}
+    <tr>
+        <td>KW other meanings</td>
+        <td>{{Other_meanings}}</td>
+    </tr>
+    {{/Other_meanings}}
 
-        {{#Other_meanings}}
-            <tr>
-                <td>KW other meanings</td>
-                <td>{{Other_meanings}}</td>
-            </tr>
-        {{/Other_meanings}}
+    {{#Keyword_notes}}
+    <tr>
+        <td>KW notes</td>
+        <td>{{Keyword_notes}}</td>
+    </tr>
+    {{/Keyword_notes}}
 
-        <tr>
-            <td>Tags</td>
-            <td>
-                {{#Tags}}
-                {{Tags}}
-                {{/Tags}}
-                {{^Tags}}
-                None
-                {{/Tags}}
-            </td>
-        </tr>
+    <tr>
+        <td>Tags</td>
+        <td>
+        {{#Tags}}
+        {{Tags}}
+        {{/Tags}}
+        {{^Tags}}
+        None
+        {{/Tags}}
+        </td>
+    </tr>
 
-        <tr>
-            <td>Note Type</td>
-            <td>{{Type}}</td>
-        </tr>
+    <tr>
+        <td>Note Type</td>
+        <td>{{Type}}</td>
+    </tr>
 
-        <tr >
-            <td>Deck</td>
-            <td>{{Deck}}</td>
-        </tr>
+    <tr >
+        <td>Deck</td>
+        <td>{{Deck}}</td>
+    </tr>
 
-        <tr>
-            <td>Card</td>
-            <td>{{Card}}</td>
-        </tr>
+    <tr>
+        <td>Card</td>
+        <td>{{Card}}</td>
+    </tr>
+
     </table>
 </div>
