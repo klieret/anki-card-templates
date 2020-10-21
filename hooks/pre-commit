@@ -1,11 +1,13 @@
 #!/bin/bash
 
-#set -e
-
 echo "*** RENDERING KANJI CARDS ***"
 
-sh $HOME/Documents/prog/japan/anki/cards/cards/japanese/kanji/bulk_mock.sh
+this_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+main_dir="${this_dir}/.."
 
+cd "${main_dir}/cards/japanese/kanji/"
+sh "bulk_mock.sh"
+cd -
 echo "done. Press Enter to continue."
 
 # Allows us to read user input below, assigns stdin to keyboard
